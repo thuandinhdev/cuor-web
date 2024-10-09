@@ -4,10 +4,6 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php'; // Nếu dùng Composer
 
-// Thêm tệp PHPMailer nếu không dùng Composer
-// require 'PHPMailer/src/Exception.php';
-// require 'PHPMailer/src/PHPMailer.php';
-// require 'PHPMailer/src/SMTP.php';
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
 
@@ -28,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Cấu hình nội dung email
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
-        $mail->Subject = 'emai được gửi từ CUOR website';
+        $mail->Subject = htmlspecialchars('emai được gửi từ CUOR website');
 
         // Lấy nội dung email từ file
         $email_user_body = file_get_contents('mailbody_user.txt');
@@ -66,12 +62,38 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->send();
 
-        // Chuyển hướng sau khi gửi email thành công
+        // $url = 'https://workschedule.cuortech.com/insert-contact';
+        // $data = array(
+        //     'content' => $email_admin_body,
+        // );
+        
+        // $ch = curl_init($url);
+        
+        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
+        // curl_setopt($ch, CURLOPT_POST, true); 
+        // curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data)); 
+
+        // curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+        //     'Content-Type: application/x-www-form-urlencoded',
+            
+        // ));
+        
+        // $response = curl_exec($ch);
+        // if (curl_errno($ch)) {
+        //     echo 'Error:' . curl_error($ch);
+        // } else {
+            
+        //     echo 'Response from server: ' . $response;
+        // }
+
+        // curl_close($ch);
+        
+
         header("Location: ../landing-cuor.html");
         exit();
 
     } catch (Exception $e) {
-        echo "Không thể gửi email. Lỗi: {$mail->ErrorInfo}";
+        echo "Erro: {$mail->ErrorInfo}";
     }
 }
 ?>
