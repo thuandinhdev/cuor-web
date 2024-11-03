@@ -113,6 +113,69 @@
     }
 
   </style>
+
+<style>
+  
+  body {
+        font-family: Arial, sans-serif; 
+        margin: 0; 
+        padding: 0; 
+    }
+
+    #top-menu {
+        width: 100%;
+        background-color: #333; 
+        overflow: visible; 
+        padding: 10px 0; 
+        position: relative; 
+    }
+
+    #top-menu ul {
+        list-style-type: none; 
+        margin: 0; 
+        padding: 0; 
+        display: flex; 
+        justify-content: center; 
+    }
+
+    #top-menu ul li {
+        position: relative; 
+        padding: 8px 16px; 
+        color: white; 
+        cursor: pointer; 
+    }
+
+    #top-menu ul li:hover {
+        background-color: #555; 
+    }
+
+    
+    #top-menu ul li ul {
+        display: none; 
+        position: absolute; 
+        top: 100%; 
+        left: 0;
+        background-color: #333; 
+        padding: 0; 
+        margin: 0; 
+        min-width: 160px; 
+        z-index: 10; 
+    }
+
+    #top-menu ul li:hover > ul {
+        display: block; 
+    }
+
+    #top-menu ul li ul li {
+        padding: 8px 16px; 
+        color: white; 
+        white-space: nowrap; 
+    }
+
+    #top-menu ul li ul li:hover {
+        background-color: #555; 
+    }
+</style>
 </head>
 
 <body class="page basicpage home" id="page-bf0cfb6554">
@@ -169,7 +232,24 @@
           </div>
         </div>
       </div>
-
+      <nav id="top-menu">
+        <ul>
+            <li>Overview</li>
+            <li>Google View
+                <ul>
+                    <li>Google Earth</li>
+                    <li>Google Map</li>
+                </ul>
+            </li>
+            <li>Simulation Models
+                <ul>
+                    <li>Domain</li>
+                    <li>Typical</li>
+                    <li>Units</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
       <div class="experiencefragment">
         <div class="cmp-experiencefragment ">
           <div class="xfpage page basicpage" style="background: #000;">
