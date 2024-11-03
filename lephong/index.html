@@ -72,7 +72,7 @@
     
     .toggle-icon {
       font-size: 24px;
-      color: #007bff;
+      color: #3b4cc0;
       cursor: pointer;
       position: absolute;
       top: 0px;
@@ -91,6 +91,25 @@
       top: 0; /* Cố định từ đỉnh */
       height: 100vh; /* Chiều cao bằng chiều cao của viewport */
       overflow-y: auto; /* Thêm thanh cuộn nếu nội dung vượt quá chiều cao */
+    }
+
+    #backToTop {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        font-size: 18px;
+        background-color: #3b4cc0;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none; /* Ẩn nút lúc đầu */
+        z-index: 1000;
+    }
+
+    #backToTop:hover {
+        background-color: #0056b3;
     }
   </style>
 </head>
@@ -290,6 +309,7 @@
       </div>
     </div>
   </div>
+  <button id="backToTop" title="Back to Top">↑</button>
   <script>
     function toggleFolderStructure() {
       var folderContainer = document.getElementById("folder-container");
@@ -310,6 +330,22 @@
         toggleIcon.classList.add("fa-bars");
       }
     }
+
+
+    // Hiển thị nút khi cuộn xuống 100px
+    window.onscroll = function () {
+        const backToTopButton = document.getElementById("backToTop");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    };
+
+    // Quay về đầu trang khi nhấn nút
+    document.getElementById("backToTop").onclick = function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
   </script>
 </body>
 </html>
