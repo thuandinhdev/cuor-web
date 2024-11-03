@@ -19,17 +19,78 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
     media="print" onload="this.media='all'" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="common/style.css">
   <script src="common/js/jquery.min.js"></script>
   <script src="common/js/slick.min.js"></script>
   <script src="common/js/script.js"></script>
   <style>
-    .col-sm-6{
+    .col-sm-6 .col-sm-12{
       padding: 0;
+      margin:0 !important;
     }
-    #iframe-pdf{
-      width: 100%;
-      height: calc(100vh - 263px);
+    .row{
+      margin-right: 0;
+    }
+    .banner-color{
+      background: linear-gradient(45deg, #881124 50%, #f49a7b 80%,  #3b4cc0 100%);
+    }
+    .line{
+      height:20px;
+      width:100%;
+      background: linear-gradient(45deg, #881124 50%, #f49a7b 80%,  #3b4cc0 100%);
+    }
+    .video {
+      max-width: 100%;
+    }
+
+    /* .video-background { */
+        /* position: relative;
+        overflow: hidden; */
+        /* width: 100%;
+        height: 100vh;
+    } */
+
+    /* .video-background video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    } */
+    #folder-container{
+      height:100vh;
+    }
+
+    .folder-structure{
+      color:#fff;
+    }
+    
+    .toggle-icon {
+      font-size: 24px;
+      color: #007bff;
+      cursor: pointer;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      z-index: 1000;
+    }
+
+    .full-width {
+      flex: 0 0 100%;
+      max-width: 100%;
+      transition: max-width 0.3s ease;
+    }
+  
+    #folder-container {
+      position: sticky;
+      top: 0; /* Cố định từ đỉnh */
+      height: 100vh; /* Chiều cao bằng chiều cao của viewport */
+      overflow-y: auto; /* Thêm thanh cuộn nếu nội dung vượt quá chiều cao */
     }
   </style>
 </head>
@@ -64,7 +125,7 @@
               <div id="container-57349e89ca" class="cmp-container">
                 <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
                   <div class="containerwithbackground aem-GridColumn aem-GridColumn--default--12">
-                    <div class="ansys-container bg-ansys-gold py-0 responsivegrid" style="background: linear-gradient(45deg, #881124 50%, #f49a7b 80%,  #3b4cc0 100%);">
+                    <div class="ansys-container bg-ansys-gold py-0 responsivegrid banner-color">
                       <div class="columncontrolcontainer">
                         <div class="bs-container">
                           <div class="row">
@@ -92,8 +153,122 @@
       <div class="experiencefragment">
         <div class="cmp-experiencefragment cmp-experiencefragment--footer">
           <div class="xfpage page basicpage">
-            <section class="cmp-container">
-              <iframe id="iframe-pdf" src="https://cuortech.com/lephong/theEmerald68.pdf" title="PDF Document"></iframe>
+            <section class="cmp-container" style="background-color: #000;">
+              <div class="row">
+                <div id="image-gallery" class="col-sm-10">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <video class="video" autoplay loop muted playsinline loading="lazy">
+                        <source src="./common/video/wsw_theEmerald68.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img3.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img4.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img5.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img6.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img7.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img8.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img3.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img4.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img5.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img6.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img7.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img8.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img3.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img4.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img5.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img6.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img7.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img8.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img3.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img4.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img5.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img6.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img7.png" class="img-fluid">
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="./common/img/img8.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                  </div>
+                  <i onclick="toggleFolderStructure()" id="toggle-icon" class="fas fa-times toggle-icon"></i>
+                </div>
+                <div id="folder-container" class="col-sm-2">
+                  <ul id="folder-structure" class="folder-structure">
+                    <li>Overview</li>
+                    <li>Google View
+                      <ul>
+                        <li>Google Earth</li>
+                        <li>Google Map</li>
+                      </ul>
+                    </li>
+                    <li>Simulation Models
+                      <ul>
+                        <li>Domain</li>
+                        <li>Typical</li>
+                        <li>Units</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>              
+              </div>
             </section>
             <div class="cmp-container">
               <div class="aem-Grid aem-Grid--12 aem-Grid--default--12">
@@ -115,8 +290,26 @@
       </div>
     </div>
   </div>
+  <script>
+    function toggleFolderStructure() {
+      var folderContainer = document.getElementById("folder-container");
+      var imageGallery = document.getElementById("image-gallery");
+      var toggleIcon = document.getElementById("toggle-icon");
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+      if (folderContainer.style.display === "none") {
+        folderContainer.style.display = "block";
+        imageGallery.classList.remove("full-width");
+        imageGallery.classList.add("zero-width");
+        toggleIcon.classList.remove("fa-bars");
+        toggleIcon.classList.add("fa-times");
+      } else {
+        folderContainer.style.display = "none";
+        imageGallery.classList.add("full-width");
+        imageGallery.classList.remove("zero-width");
+        toggleIcon.classList.remove("fa-times");
+        toggleIcon.classList.add("fa-bars");
+      }
+    }
+  </script>
 </body>
-
 </html>
