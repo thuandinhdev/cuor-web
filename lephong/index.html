@@ -29,17 +29,20 @@
       padding: 0 !important;
       margin:0 !important;
     }
+    .col-sm-12{
+      width:100%;
+    }
     .row{
       margin-right: 0;
     }
     .banner-color{
       background: linear-gradient(45deg, #881124 50%, #f49a7b 80%,  #3b4cc0 100%);
     }
-    .line{
+    /* .line{
       height:20px;
       width:100%;
-      background: linear-gradient(45deg, #881124 50%, #f49a7b 80%,  #3b4cc0 100%);
-    }
+      background: #000;
+    } */
     .video {
       max-width: 100%;
     }
@@ -262,8 +265,52 @@
                     </div>
                     <div class="line"></div>
                     <div class="col-sm-12">
-                      <video class="video" autoplay loop muted playsinline loading="lazy">
-                        <source src="./common/video/wsw_theEmerald68.mp4" type="video/mp4">
+                      <video class="video" autoplay loop muted playsinline loading="lazy" width="100%" onloadedmetadata="this.playbackRate = 0.5;">
+                        <source src="./common/emerald68/Slide2.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-12">
+                      <img src="./common/emerald68/Slide3.png" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-12">
+                      <img src="./common/emerald68/Slide4.PNG" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-12">
+                      <img src="./common/emerald68/Slide5.PNG" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-12">
+                      <img src="./common/emerald68/Slide6.PNG" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-12">
+                      <img src="./common/emerald68/Slide7.PNG" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-12">
+                      <img src="./common/emerald68/Slide8.PNG" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-12">
+                      <img src="./common/emerald68/Slide9.PNG" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-12">
+                      <img src="./common/emerald68/Slide10.PNG" class="img-fluid">
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-12">
+                      <video class="video" autoplay loop muted playsinline loading="lazy" width="100%" onloadedmetadata="this.playbackRate = 0.5;">
+                        <source src="./common/emerald68/Slide11.mp4" type="video/mp4">
+                      </video>
+                    </div>
+                    <div class="line"></div>
+                    <div class="col-sm-12">
+                      <video class="video" autoplay loop muted playsinline loading="lazy" width="100%" onloadedmetadata="this.playbackRate = 0.5;">
+                        <source src="./common/emerald68/Slide12.mp4" type="video/mp4">
                       </video>
                     </div>
                     <div class="line"></div>
@@ -328,6 +375,8 @@
     document.getElementById("backToTop").onclick = function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+    
+
   </script>
 </body>
 </html>
