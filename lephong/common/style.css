@@ -22685,3 +22685,95 @@ html {
 .hero-carousel-button {
   display: none;
 }
+
+.sidebar {
+  position: fixed;
+  top: 40%;
+  transform: translateY(-50%);
+  right: 0;
+  padding: 10px;
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  height: 70vh;
+  max-height: 500px;
+  width: 220px;
+  scrollbar-width: thin;
+  overflow-y: auto;
+  transition: all 0.3s;
+}
+.sidebar *::marker {
+  color: #fff;
+  font-size: 20px;
+  line-height: 18px;
+}
+.sidebar ul {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.sidebar ul li {
+  margin-bottom: 4px;
+}
+.sidebar ul ul {
+  list-style-type: disc;
+}
+.sidebar ul ul li::marker {
+  font-size: 18px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.sidebar a:hover {
+  opacity: 0.8;
+}
+.sidebar__content {
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+a.sidebar__list {
+  font-size: 20px;
+}
+@media (min-width: 1745px) {
+  .sidebar {
+    position: fixed;
+    top: 415px;
+    right: 0;
+    width: 250px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    width: 250px;
+    height: 72vh;
+    max-height: 450px;
+    position: fixed;
+    top: 415px;
+    right: 0;
+  }
+  .sidebar *::marker {
+    font-size: 16px;
+    line-height: 14px;
+  }
+  .sidebar ul {
+    margin-top: 2px;
+    margin-bottom: 4px;
+  }
+  .sidebar ul li {
+    margin-bottom: 2px;
+  }
+}
+@media (max-width: 1745px) {
+  .sidebar {
+    display: none;
+  }
+}

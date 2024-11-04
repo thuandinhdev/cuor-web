@@ -25,12 +25,16 @@
   <script src="common/js/slick.min.js"></script>
   <script src="common/js/script.js"></script>
   <style>
+  
+    body {
+          font-family: Arial, sans-serif; 
+          margin: 0;
+          padding: 0;
+      }
     .col-sm-6, .col-sm-12{
-      padding: 0 !important;
-      margin:0 !important;
-    }
-    .col-sm-12{
       width:100%;
+      padding: 0 !important;
+      /* margin:0 !important; */
     }
     .row{
       margin-right: 0;
@@ -39,9 +43,9 @@
       background: linear-gradient(45deg, #881124 50%, #f49a7b 80%,  #3b4cc0 100%);
     }
     /* .line{
-      height:20px;
+      height:5px;
       width:100%;
-      background: #000;
+      background: #fff;
     } */
     .video {
       max-width: 100%;
@@ -79,7 +83,7 @@
       cursor: pointer;
       position: absolute;
       top: 0px;
-      right: 0px;
+      right: 10px;
       z-index: 1000;
     }
 
@@ -91,9 +95,9 @@
   
     #folder-container {
       position: sticky;
-      top: 0; /* Cố định từ đỉnh */
-      height: 100vh; /* Chiều cao bằng chiều cao của viewport */
-      overflow-y: auto; /* Thêm thanh cuộn nếu nội dung vượt quá chiều cao */
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
     }
 
     #backToTop {
@@ -107,78 +111,17 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        display: none; /* Ẩn nút lúc đầu */
+        display: none;
         z-index: 1000;
     }
 
     #backToTop:hover {
         background-color: #0056b3;
     }
-
+    .img-fluid{
+      width: 100%;
+    }
   </style>
-
-<style>
-  
-  body {
-        font-family: Arial, sans-serif; 
-        margin: 0; 
-        padding: 0; 
-    }
-
-    #top-menu {
-        width: 100%;
-        background-color: #333; 
-        overflow: visible; 
-        padding: 10px 0; 
-        position: relative; 
-    }
-
-    #top-menu ul {
-        list-style-type: none; 
-        margin: 0; 
-        padding: 0; 
-        display: flex; 
-        justify-content: center; 
-    }
-
-    #top-menu ul li {
-        position: relative; 
-        padding: 8px 16px; 
-        color: white; 
-        cursor: pointer; 
-    }
-
-    #top-menu ul li:hover {
-        background-color: #555; 
-    }
-
-    
-    #top-menu ul li ul {
-        display: none; 
-        position: absolute; 
-        top: 100%; 
-        left: 0;
-        background-color: #333; 
-        padding: 0; 
-        margin: 0; 
-        min-width: 160px; 
-        z-index: 10; 
-    }
-
-    #top-menu ul li:hover > ul {
-        display: block; 
-    }
-
-    #top-menu ul li ul li {
-        padding: 8px 16px; 
-        color: white; 
-        white-space: nowrap; 
-    }
-
-    #top-menu ul li ul li:hover {
-        background-color: #555; 
-    }
-</style>
 </head>
 
 <body class="page basicpage home" id="page-bf0cfb6554">
@@ -235,88 +178,66 @@
           </div>
         </div>
       </div>
-      <nav id="top-menu">
-        <ul>
-            <li>Overview</li>
-            <li>Google View
-                <ul>
-                    <li>Google Earth</li>
-                    <li>Google Map</li>
-                </ul>
-            </li>
-            <li>Simulation Models
-                <ul>
-                    <li>Domain</li>
-                    <li>Typical</li>
-                    <li>Units</li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
       <div class="experiencefragment">
         <div class="cmp-experiencefragment ">
           <div class="xfpage page basicpage" style="background: #000;">
             <section class="bs-container" style="background-color: #000;">
               <div class="row">
-                <div id="image-gallery" class="col-sm-12">
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <img src="./common/img/Slide1.png" class="img-fluid">
-                    </div>
-                    <div class="line"></div>
-                    <div class="col-sm-12">
-                      <video class="video" autoplay loop muted playsinline loading="lazy" width="100%" onloadedmetadata="this.playbackRate = 0.5;">
-                        <source src="./common/emerald68/Slide2.mp4" type="video/mp4">
-                      </video>
-                    </div>
-                    <div class="line"></div>
-                    <div class="col-sm-12">
-                      <img src="./common/emerald68/Slide3.png" class="img-fluid">
-                    </div>
-                    <div class="line"></div>
-                    <div class="col-sm-12">
-                      <img src="./common/emerald68/Slide4.PNG" class="img-fluid">
-                    </div>
-                    
-                    <div class="line"></div>
-                    <div class="col-sm-12">
-                      <img src="./common/emerald68/Slide5.PNG" class="img-fluid">
-                    </div>
-                    <div class="line"></div>
-                    <div class="col-sm-12">
-                      <img src="./common/emerald68/Slide6.PNG" class="img-fluid">
-                    </div>
-                    <div class="line"></div>
-                    <div class="col-sm-12">
-                      <img src="./common/emerald68/Slide7.PNG" class="img-fluid">
-                    </div>
-                    <div class="line"></div>
-                    <div class="col-sm-12">
-                      <img src="./common/emerald68/Slide8.PNG" class="img-fluid">
-                    </div>
-                    <div class="line"></div>
-                    <div class="col-sm-12">
-                      <img src="./common/emerald68/Slide9.PNG" class="img-fluid">
-                    </div>
-                    <div class="line"></div>
-                    <div class="col-sm-12">
-                      <img src="./common/emerald68/Slide10.PNG" class="img-fluid">
-                    </div>
-                    <div class="line"></div>
-                    <div class="col-sm-12">
-                      <video class="video" autoplay loop muted playsinline loading="lazy" width="100%" onloadedmetadata="this.playbackRate = 0.5;">
-                        <source src="./common/emerald68/Slide11.mp4" type="video/mp4">
-                      </video>
-                    </div>
-                    <div class="line"></div>
-                    <div class="col-sm-12">
-                      <video class="video" autoplay loop muted playsinline loading="lazy" width="100%" onloadedmetadata="this.playbackRate = 0.5;">
-                        <source src="./common/emerald68/Slide12.mp4" type="video/mp4">
-                      </video>
-                    </div>
-                    <div class="line"></div>
-                  </div>
-                </div>     
+                <div id="slide1" class="col-sm-12">
+                  <img src="./common/img/Slide1.png" class="img-fluid">
+                </div>
+                <!-- <div class="line"></div> -->
+                <div id="slide2" class="col-sm-12">
+                  <video class="video img-fluid" autoplay loop muted playsinline loading="lazy" onloadedmetadata="this.playbackRate = 0.5;">
+                    <source src="./common/emerald68/Slide2.mp4" type="video/mp4" >
+                  </video>
+                </div>
+                <!-- <div class="line"></div> -->
+                <div id="slide3" class="col-sm-12">
+                  <img src="./common/emerald68/Slide3.png" class="img-fluid">
+                </div>
+                <!-- <div class="line"></div> -->
+                <div id="slide4" class="col-sm-12">
+                  <img src="./common/emerald68/Slide4.PNG" class="img-fluid">
+                </div>
+                
+                <!-- <div class="line"></div> -->
+                <div id="slide5" class="col-sm-12">
+                  <img src="./common/emerald68/Slide5.PNG" class="img-fluid">
+                </div>
+                <!-- <div class="line"></div> -->
+                <div id="slide6" class="col-sm-12">
+                  <img src="./common/emerald68/Slide6.PNG" class="img-fluid">
+                </div>
+                <!-- <div class="line"></div> -->
+                <div id="slide7" class="col-sm-12">
+                  <img src="./common/emerald68/Slide7.PNG" class="img-fluid">
+                </div>
+                <!-- <div class="line"></div> -->
+                <div id="slide8" class="col-sm-12">
+                  <img src="./common/emerald68/Slide8.PNG" class="img-fluid">
+                </div>
+                <!-- <div class="line"></div> -->
+                <div id="slide9" class="col-sm-12">
+                  <img src="./common/emerald68/Slide9.PNG" class="img-fluid">
+                </div>
+                <!-- <div class="line"></div> -->
+                <div id="slide10" class="col-sm-12">
+                  <img src="./common/emerald68/Slide10.PNG" class="img-fluid">
+                </div>
+                <!-- <div class="line"></div> -->
+                <div class="col-sm-12">
+                  <video class="video img-fluid" autoplay loop muted playsinline loading="lazy" onloadedmetadata="this.playbackRate = 0.5;">
+                    <source src="./common/emerald68/Slide11.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <!-- <div class="line"></div> -->
+                <div class="col-sm-12">
+                  <video class="video img-fluid" autoplay loop muted playsinline loading="lazy" onloadedmetadata="this.playbackRate = 0.5;">
+                    <source src="./common/emerald68/Slide12.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <!-- <div class="line"></div> -->
               </div>
             </section>
             <div class="cmp-container">
@@ -339,30 +260,81 @@
       </div>
     </div>
   </div>
+  <div class="sidebar">
+    <i onclick="toggleFolderStructure()" id="toggle-icon" class="fas fa-times toggle-icon"></i>
+    <ul class="sidebar__content">
+      <li>
+        <a class="sidebar__list" href="#page-bf0cfb6554">Overview</a>
+      </li>
+      <li>
+        <a class="sidebar__list" href="#slide1">Google View</a>
+        <ul>
+          <li>
+            <a href="#slide2">Google Earth</a>
+          </li>
+          <li>
+            <a href="#slide3">Google Map</a>
+          </li>
+          <li>
+            <a href="#slide4">Modeling</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="sidebar__list" href="#slide5">Simulation Models </a>
+        <ul>
+          <li>
+            <a href="#slide6">Domain</a>
+          </li>
+          <li>
+            <a href="#slide7">Typical</a>
+          </li>
+          <li>
+            <a href="#slide8">Units</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="sidebar__list" href="#slide9">Results</a>
+        <ul>
+          <li>
+            <a href="#slide10">Vector</a>
+          </li>
+          <li>
+            <a href="#slide10">Velocity</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a class="sidebar__list" href="#slide1">Google View</a>
+        <ul>
+          <li>
+            <a href="#slide2">Google Earth</a>
+          </li>
+          <li>
+            <a href="#slide3">Google Map</a>
+          </li>
+          <li>
+            <a href="#slide4">Modeling</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
   <button id="backToTop" title="Back to Top">↑</button>
   <script>
     function toggleFolderStructure() {
-      var folderContainer = document.getElementById("folder-container");
-      var imageGallery = document.getElementById("image-gallery");
-      var toggleIcon = document.getElementById("toggle-icon");
-
-      if (folderContainer.style.display === "none") {
-        folderContainer.style.display = "block";
-        imageGallery.classList.remove("full-width");
-        imageGallery.classList.add("zero-width");
-        toggleIcon.classList.remove("fa-bars");
-        toggleIcon.classList.add("fa-times");
-      } else {
-        folderContainer.style.display = "none";
-        imageGallery.classList.add("full-width");
-        imageGallery.classList.remove("zero-width");
-        toggleIcon.classList.remove("fa-times");
-        toggleIcon.classList.add("fa-bars");
-      }
+        if($('.sidebar__content').css("display") === "none"){
+          $('.sidebar__content').css("display", "block");
+          $("#toggle-icon").removeClass("fa-bars");
+          $("#toggle-icon").addClass("fa-times");
+        } else {
+          $('.sidebar__content').css("display", "none");
+          $("#toggle-icon").addClass("fa-bars");
+          $("#toggle-icon").removeClass("fa-times");
+        }
     }
 
-
-    // Hiển thị nút khi cuộn xuống 100px
     window.onscroll = function () {
         const backToTopButton = document.getElementById("backToTop");
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -372,11 +344,9 @@
         }
     };
 
-    // Quay về đầu trang khi nhấn nút
     document.getElementById("backToTop").onclick = function () {
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
-    
 
   </script>
 </body>
