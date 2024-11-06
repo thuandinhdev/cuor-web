@@ -205,6 +205,38 @@
                 border-radius: 5px;
                 z-index: 1000;
             }
+
+
+            .sidebar {
+            position: absolute;
+            top: 720px; /* ban đầu đặt sidebar ở dưới video */
+            right: 0;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+            z-index: 1000;
+            height: 70vh;
+            max-height: 500px;
+            width: 220px;
+            overflow-y: auto;
+            transition: all 0.3s;
+            }
+
+            .sidebar.fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 220px;
+            height: 70vh;
+            transform: translateY(0);
+            transition: transform 0.3s ease-in-out;
+            }
+            @media (max-width: 1745px) {
+            .sidebar {
+                display: none;
+            }
+            }
         </style>
     </head>
 
@@ -356,7 +388,53 @@
                 </div>
             </div>
         </section>
-
+        <div class="sidebar">
+            <i onclick="toggleFolderStructure()" id="toggle-icon" class="fas fa-times toggle-icon"></i>
+            <ul class="sidebar__content">
+              <li>
+                <a class="text-white" href="#page-bf0cfb6554">Overview</a>
+              </li>
+              <li>
+                <a class="text-white" href="#slide1">Google View</a>
+                <ul>
+                  <li>
+                    <a class="text-white"  href="#slide2">Google Earth</a>
+                  </li>
+                  <li>
+                    <a class="text-white"  href="#slide3">Google Map</a>
+                  </li>
+                  <li>
+                    <a class="text-white"  href="#slide4">Modeling</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="text-white" href="#slide5">Simulation Models </a>
+                <ul>
+                  <li>
+                    <a class="text-white"  href="#slide6">Domain</a>
+                  </li>
+                  <li>
+                    <a class="text-white"  href="#slide7">Typical</a>
+                  </li>
+                  <li>
+                    <a class="text-white"  href="#slide8">Units</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="text-white" href="#slide9">Results</a>
+                <ul>
+                  <li>
+                    <a class="text-white"  href="#slide10">Vector</a>
+                  </li>
+                  <li>
+                    <a class="text-white"  href="#slide10">Velocity</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
 
         <div id="popupOverlay" class="popup-overlay" onclick="closeFullscreen()">
             <button id="closeButton" class="close-icon" onclick="closeFullscreen()">✕</button>
@@ -440,6 +518,21 @@
 
 
             var lightbox = new SimpleLightbox('.simplelightbox');
+
+
+            window.onscroll = function() {
+  var video = document.querySelector('.video-background');
+  var sidebar = document.querySelector('.sidebar');
+  var videoHeight = video.offsetHeight;
+  var scrollPosition = window.scrollY;
+
+  // Kiểm tra nếu cuộn qua video thì sidebar sẽ cố định ở góc trên bên phải
+  if (scrollPosition > videoHeight) {
+    sidebar.classList.add('fixed');
+  } else {
+    sidebar.classList.remove('fixed');
+  }
+};
         </script>
     </body>
 
