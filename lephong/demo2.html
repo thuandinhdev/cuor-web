@@ -113,7 +113,7 @@
                 align-items: center;
                 z-index: 2;
             }
-            #myVideo.paused {
+            .video.paused {
                 filter: brightness(0.5);
             }
 
@@ -273,7 +273,7 @@
                 <div class="row ">
                     <div class="col-6">
                         <div class="title-heading text-white  ">
-                            <h1 class="heading mb-3">Navigating the Future: Autonomous Systems for A&D</h1>
+                            <h1 class="heading mb-3">Natural ventilation analysis using CFD simulation</h1>
                             <p class="para-desc ">The Emerald 68 building has been remodeled for investigating its natural ventilation in relation to local wind directions.
                                 The evaluation methodology was based on the Building and Construction Authority's (BCA) Green Mark (GM) Computational Fluid Dynamics (CFD) analysis from 2021.
                                 This paper aims to provide project investors with essential insights for evaluating and enhancing natural ventilation quality in buildings. However, it's important to note that this analysis was based on a reconstructed building model derived from estimations available on the website XXX. Therefore, the results only represent a partial assessment of the building's natural ventilation capabilities.
@@ -290,20 +290,28 @@
             </h4>
         </div> -->
 
-        <section class="section pt-0">
+        <section class="section pt-0 pb-0">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="section-title mb-4">
                             <h4 class="title ">
                                 Summary</h4>
-                            <p class="para-desc mb-0">Start working with that can provide everything you need to generate awareness, drive traffic, connect.</p>
+                            <p class=" mb-0">The Residential Building Criteria requires that units with sufficient natural ventilation have to achieve a weight-average area wind speed of 0.6 m/s and more.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <a class="simplelightbox" href="emerald68/Slide1.png"><img id="imagePreview" src="emerald68/Slide1.png" class="img-fluid shadow rounded" alt=""></a>
-                    </div><!--end col-->
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
+                        <p class="para-desc ">
+                        The findings indicated that only apartment A02 approximately attained the benchmark for adequate natural ventilation among the 12 apartments on the typical floor.
+                        Apartments A11 and A12 exhibited velocities much below the threshold for adequate natural ventilation.
+                        </p>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <a class="simplelightbox" href="emerald68_new/slide5.png"><img id="imagePreview" src="emerald68_new/slide5.png" class="img-fluid shadow rounded" alt=""></a>
+                    </div>
+                    
+                    <!--end col-->
+                    <!-- <div class="col-lg-6 col-md-6" style="position: relative;">
                         <video id="myVideo" class="paused" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
                             <source src="emerald68/Slide2.mp4" type="video/mp4">
                         </video>
@@ -314,7 +322,7 @@
                             </svg>
                         </div>
                         <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen()">⛶</button>
-                    </div>
+                    </div> -->
                 </div><!--end row-->
             </div>
             <div class="bg-light">
@@ -322,42 +330,340 @@
                     <div class="row align-items-center">
                         <div class="col-12">
                             <div class="section-title mb-4">
-                                <h4 class="title ">
-                                    Results</h4>
-                                <p class="mb-0">In a virtual 3D environment, design, explore, integrate, and optimize various camera system modules</p>
-                                <p class="mb-0">In a virtual 3D environment, design, explore, integrate, and optimize various camera system modules (lens, sensor, image processing algorithm), In a virtual 3D environment, design, explore, integrate, and optimize various camera system modules (lens, sensor, image processing algorithm).</p>
+                                <h4 class="title">
+                                    Pressure</h4>
+                                <p class="mb-0">The pressure contours of the building are presented in various directions including front, rear, left, right and isometric views.
+                                </p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 ">
-                            <a class="simplelightbox" href="emerald68/Slide5.PNG"><img src="emerald68/Slide5.PNG" class="img-fluid shadow rounded" alt=""></a>
+                            <a class="simplelightbox" href="emerald68_new/slide7.png"><img src="emerald68_new/slide7.png" class="img-fluid shadow rounded" alt=""></a>
                         </div>
                         <div class="col-lg-6 col-md-6 ">
-                            <a class="simplelightbox" href="emerald68/Slide6.PNG"><img src="emerald68/Slide6.PNG" class="img-fluid shadow rounded" alt=""></a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 ">
-                            <a class="simplelightbox" href="emerald68/Slide7.PNG"><img src="emerald68/Slide7.PNG" class="img-fluid shadow rounded" alt=""></a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 ">
-                            <a class="simplelightbox" href="emerald68/Slide8.PNG"><img src="emerald68/Slide8.PNG" class="img-fluid shadow rounded" alt=""></a>
+                            <p class="para-desc ">The pressure is largely concentrated behind the building and towards the highway.</p>
                         </div>
                     </div><!--end row-->
                 </div>
             </div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="section-title mb-4">
+                            <h4 class="title ">Overall velocity</h4>
+                            <p class="mb-0">The velocity distribution results have been presented at different elevations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 ">
+                        <p class="para-desc ">The velocity distribution is shown on floors 3, 12, 29 and 37. The results showed strong and weak wind areas as well as showed recirculating wind areas.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6" style="position: relative;">
+                        <video id="myVideo1" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                            <source src="emerald68_new/slide9.mp4" type="video/mp4">
+                        </video>
+                        <div id="playButton1" class="play-icon" onclick="togglePlayPause('myVideo1', 'playButton1')">
+                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                <polygon points="10,8 16,12 10,16" fill="#881124" />
+                            </svg>
+                        </div>
+                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide9.mp4')">⛶</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6" style="position: relative;">
+                        <video id="myVideo2" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                            <source src="emerald68_new/slide10.mp4" type="video/mp4">
+                        </video>
+                        <div id="playButton2" class="play-icon" onclick="togglePlayPause('myVideo2', 'playButton2')">
+                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                <polygon points="10,8 16,12 10,16" fill="#881124" />
+                            </svg>
+                        </div>
+                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide10.mp4')">⛶</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6" style="position: relative;">
+                        <video id="myVideo3" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                            <source src="emerald68_new/slide11.mp4" type="video/mp4">
+                        </video>
+                        <div id="playButton3" class="play-icon" onclick="togglePlayPause('myVideo3', 'playButton3')">
+                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                <polygon points="10,8 16,12 10,16" fill="#881124" />
+                            </svg>
+                        </div>
+                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide11.mp4')">⛶</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6" style="position: relative;">
+                        <video id="myVideo4" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                            <source src="emerald68_new/slide12.mp4" type="video/mp4">
+                        </video>
+                        <div id="playButton4" class="play-icon" onclick="togglePlayPause('myVideo4', 'playButton4')">
+                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                <polygon points="10,8 16,12 10,16" fill="#881124" />
+                            </svg>
+                        </div>
+                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide12.mp4')">⛶</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6" style="position: relative;">
+                        <video id="myVideo5" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                            <source src="emerald68_new/slide13.mp4" type="video/mp4">
+                        </video>
+                        <div id="playButton5" class="play-icon" onclick="togglePlayPause('myVideo5', 'playButton5')">
+                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                <polygon points="10,8 16,12 10,16" fill="#881124" />
+                            </svg>
+                        </div>
+                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide13.mp4')">⛶</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-light">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="section-title mb-4">
+                                <h4 class="title">Apartment velocity</h4>
+                                <p class="mb-0">The wind velocity distribution for each apartment on a typical floor has been presented in detail as below.
+                                </p>
+                                <p class="mb-0">
+                                    The results shown below illustrate the three-dimensional spatial and velocity distribution within each apartment.
+                                    The simulation findings indicate a significant disparity in velocity among the apartments.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo6" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide15.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton6" class="play-icon" onclick="togglePlayPause('myVideo6', 'playButton6')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide15.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo7" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide16.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton7" class="play-icon" onclick="togglePlayPause('myVideo7', 'playButton7')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide16.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo8" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide17.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton8" class="play-icon" onclick="togglePlayPause('myVideo8', 'playButton8')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide17.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo9" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide18.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton9" class="play-icon" onclick="togglePlayPause('myVideo9', 'playButton9')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide18.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo10" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide19.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton10" class="play-icon" onclick="togglePlayPause('myVideo10', 'playButton10')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide19.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo11" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide20.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton11" class="play-icon" onclick="togglePlayPause('myVideo11', 'playButton11')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide20.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo12" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide21.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton12" class="play-icon" onclick="togglePlayPause('myVideo12', 'playButton12')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide21.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo13" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide22.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton13" class="play-icon" onclick="togglePlayPause('myVideo13', 'playButton13')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide22.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo14" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide23.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton14" class="play-icon" onclick="togglePlayPause('myVideo14', 'playButton14')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide23.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo15" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide24.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton15" class="play-icon" onclick="togglePlayPause('myVideo15', 'playButton15')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide24.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo16" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide25.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton16" class="play-icon" onclick="togglePlayPause('myVideo16', 'playButton16')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide25.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo17" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide26.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton17" class="play-icon" onclick="togglePlayPause('myVideo17', 'playButton17')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide26.mp4')">⛶</button>
+                        </div>
+                    </div><!--end row-->
+                </div>
+            </div>
+            <!-- <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="section-title mb-4">
+                            <h4 class="title ">Results</h4>
+                            <p class="mb-0">The velocity distribution results have been presented at different elevations.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6" style="position: relative;">
+                        <video id="myVideo1" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                            <source src="emerald68_new/slide9.mp4" type="video/mp4">
+                        </video>
+                        <div id="playButton1" class="play-icon" onclick="togglePlayPause('myVideo1', 'playButton1')">
+                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                <polygon points="10,8 16,12 10,16" fill="#881124" />
+                            </svg>
+                        </div>
+                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide9.mp4')">⛶</button>
+                    </div>
+                    <div class="col-lg-6 col-md-6 ">
+                        <p class="para-desc ">The velocity distribution is shown on floors 3, 12, 29 and 37. The results showed strong and weak wind areas as well as showed circulating wind areas.</p>
+                    </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo2" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide10a.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton2" class="play-icon" onclick="togglePlayPause('myVideo2', 'playButton2')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide10a.mp4')">⛶</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6" style="position: relative;">
+                            <video id="myVideo3" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                                <source src="emerald68_new/slide10b.mp4" type="video/mp4">
+                            </video>
+                            <div id="playButton3" class="play-icon" onclick="togglePlayPause('myVideo3', 'playButton3')">
+                                <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                    <polygon points="10,8 16,12 10,16" fill="#881124" />
+                                </svg>
+                            </div>
+                            <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide10b.mp4')">⛶</button>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12">
                         <div class="section-title mb-4">
                             <h4 class="title">
                                 Modeling</h4>
-                            <p class="mb-0">In a virtual 3D environment, design, explore, integrate, and optimize various camera system modules (lens, sensor, image processing algorithm).</p>
-                            <p class="mb-0">In a virtual 3D environment, design, explore, integrate, and optimize various camera system modules (lens, sensor, image processing algorithm).</p>
+                            <p class="mb-0">The apartments were built based on images from the website of project X.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 ">
-                        <a class="simplelightbox" href="emerald68/Slide3.png"><img src="emerald68/Slide3.png" class="img-fluid shadow rounded" alt=""></a>
+                        <a class="simplelightbox" href="emerald68_new/slide28.png"><img src="emerald68_new/slide28.png" class="img-fluid shadow rounded" alt=""></a>
                     </div>
                     <div class="col-lg-6 col-md-6 ">
-                        <a class="simplelightbox" href="emerald68/Slide4.PNG"><img src="emerald68/Slide4.PNG" class="img-fluid shadow rounded" alt=""></a>
+                        <p class="para-desc ">The computational domain shall encompass the area of interest, the attributes of the local environment, and the buildings located within a distance of at least three times the length of the longest border measurement of the development.</p>
+
+                        <p class="para-desc ">Topographical information must be incorporated into the simulation models if the building and adjacent development are situated in hilly terrain. The computational domain will be expanded from the outer edge of the proximity regions to the border to avoid non-physical airflow solutions when convergence is achieved.</p>
+
+                        <p class="para-desc ">The computational domain must be oriented in accordance with the direction of wind flow. The domain height will be increased to about three times the height of the highest building in the designated area.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 ">
+                        <a class="simplelightbox" href="emerald68_new/slide29.png"><img src="emerald68_new/slide29.png" class="img-fluid shadow rounded" alt=""></a>
+                    </div>
+                    <div class="col-lg-6 col-md-6" style="position: relative;">
+                        <video id="myVideo18" class="paused video" width="100%" height="auto" loop muted playsinline onloadedmetadata="this.playbackRate = 0.5;">
+                            <source src="emerald68_new/slide30.mp4" type="video/mp4">
+                        </video>
+                        <div id="playButton18" class="play-icon" onclick="togglePlayPause('myVideo18', 'playButton18')">
+                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
+                                <polygon points="10,8 16,12 10,16" fill="#881124" />
+                            </svg>
+                        </div>
+                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide30.mp4')">⛶</button>
                     </div>
                 </div><!--end row-->
             </div>
@@ -366,28 +672,26 @@
                     <div class="row align-items-center">
                         <div class="col-12">
                             <div class="section-title mb-4">
-                                <h4 class="title ">Ventilation simulation methodology</h4>
-                                <p class="mb-0">In a virtual 3D environment, design</p>
+                                <h4 class="title ">Methodology</h4>
+                                <p class="mb-0">IThe simulation of a green building in OpenFOAM uses a computational fluid dynamics (CFD) approach based on the Reynolds-Averaged Navier-Stokes (RANS) equations</p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 ">
-                            <a class="simplelightbox" href="emerald68/Slide1.png"><img src="emerald68/Slide1.png" class="img-fluid shadow rounded" alt=""></a>
+                            <p class="para-desc ">The equations are solved in a 3D domain (x, y, z) to describe the flow of air around the building and its surrounding environment. The simulation assumes that the flow is:
+
+                            </p>
+                            <ul>
+                                <li>Incompressible: The density of the air remains constant, which is a reasonable assumption for most building applications.</li>
+                                <li>Turbulent: The flow is characterized by chaotic and unpredictable fluctuations, as it is typically the case for air movement around buildings.</li>
+                                <li>Steady-state: The flow conditions are considered to be unchanging over time, although this can be modified to account for varying wind conditions.</li>
+                            </ul>
+                            <p class="para-desc ">The OpenFOAM software utilizes a finite volume method to solve the RANS equations. These equations, along with the standard k-epsilon turbulence model, form the foundation of the simulation.</p>
+                            <p class="para-desc ">The SIMPLE (Semi-Implicit Method for Pressure-Linked Equations) algorithm is implemented within OpenFOAM's simpleFoam solver. This algorithm is used to solve the coupled equations for pressure and velocity, which are essential for accurately describing the fluid flow field.</p>
+                                
+                                
                         </div>
                         <div class="col-lg-6 col-md-6 ">
-                            <p class="para-desc ">In a virtual 3D environment, design</p>
-                            <ul>
-                                <li>In a virtual 3D environment, design, In a virtual 3D environment, design, In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                            </ul>
+                            <a class="simplelightbox" href="emerald68_new/slide32.png"><img src="emerald68_new/slide32.png" class="img-fluid shadow rounded" alt=""></a>
                         </div>
                     </div><!--end row-->
                 </div>
@@ -397,52 +701,92 @@
                     <div class="col-12">
                         <div class="section-title mb-4">
                             <h4 class="title">
-                                Software</h4>
-                            <p class="mb-0">In a virtual 3D environment, design, explore, integrate, and optimize various camera system modules (lens, sensor, image processing algorithm).</p>
-                            <p class="mb-0">In a virtual 3D environment, design, explore, integrate, and optimize various camera system modules (lens, sensor, image processing algorithm).</p>
+                                Responsibility</h4>
+                            <p class="mb-0">Non-Affiliation Disclaimer: We declare no affiliation, sponsorship, nor any partnerships with Singapore Building Construction Authority (BCA) who issues Green Mark criteria and any relevant government agencies.</p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 ">
-                        <a class="simplelightbox" href="emerald68/Slide3.png"><img src="emerald68/Slide3.png" class="img-fluid shadow rounded" alt=""></a>
+                        <a class="simplelightbox" href="emerald68_new/slide34.png"><img src="emerald68_new/slide34.png" class="img-fluid shadow rounded" alt=""></a>
                     </div>
                     <div class="col-lg-6 col-md-6 ">
-                        <a class="simplelightbox" href="emerald68/Slide4.PNG"><img src="emerald68/Slide4.PNG" class="img-fluid shadow rounded" alt=""></a>
+                        <p class="para-desc ">
+                            Special thanks to:<br>
+                            CFD Expert: Phan Huu Lam<br>
+                            Building Ventilation Expert: Le Duong Tuan<br>
+                            Developer: Dinh Duy Thuan<br>
+                            RP: La Ho<br>
+                            For more information, please contact: cuor@cuortech.com
+                        </p>
                     </div>
                 </div><!--end row-->
             </div>
-            <div class="bg-light">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-12">
-                            <div class="section-title mb-4">
-                                <h4 class="title ">Responsible person</h4>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 ">
-                            <a class="simplelightbox" href="emerald68/Slide1.png"><img src="emerald68/Slide1.png" class="img-fluid shadow rounded" alt=""></a>
-                        </div>
-                        <div class="col-lg-6 col-md-6 ">
-                            <p class="para-desc ">In a virtual 3D environment, design</p>
-                            <ul>
-                                <li>In a virtual 3D environment, design, In a virtual 3D environment, design, In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                                <li>In a virtual 3D environment, design</li>
-                            </ul>
-                        </div>
-                    </div><!--end row-->
-                </div>
-            </div>
         </section>
 
-        
+        <!-- Start Contact -->
+        <section class="section p-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6 pt-2 pt-sm-0 order-2 order-md-1">
+                        <div class="card shadow rounded border-0">
+                            <div class="card-body py-5">
+                                <h4 class="card-title">Get In Touch !</h4>
+                                <div class="custom-form mt-4">
+                                    <div id="message"></div>
+                                    <form method="post" action="http://shreethemes.in/landrick/layouts/php/contact.php" name="contact-form" id="contact-form">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group position-relative">
+                                                    <label>Your Name <span class="text-danger">*</span></label>
+                                                    <i data-feather="user" class="fea icon-sm icons"></i>
+                                                    <input name="name" id="name" type="text" class="form-control pl-5" placeholder="First Name :">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group position-relative">
+                                                    <label>Your Email <span class="text-danger">*</span></label>
+                                                    <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                    <input name="email" id="email" type="email" class="form-control pl-5" placeholder="Your email :">
+                                                </div> 
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group position-relative">
+                                                    <label>Subject</label>
+                                                    <i data-feather="book" class="fea icon-sm icons"></i>
+                                                    <input name="subject" id="subject" type="text" class="form-control pl-5" placeholder="Subject">
+                                                </div>                                                                               
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group position-relative">
+                                                    <label>Comments</label>
+                                                    <i data-feather="message-circle" class="fea icon-sm icons"></i>
+                                                    <textarea name="comments" id="comments" rows="4" class="form-control pl-5" placeholder="Your Message :"></textarea>
+                                                </div>
+                                            </div>
+                                        </div><!--end row-->
+                                        <div class="row">
+                                            <div class="col-sm-12 text-center">
+                                                <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary btn-block" value="Send Message">
+                                                <div id="simple-msg"></div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                    </form><!--end form--> 
+                                </div><!--end custom-form-->
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-6 order-1 order-md-2">
+                        <div class="card border-0">
+                            <div class="card-body p-0">
+                                <img src="emerald68_new/slide5.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+            
+        </section><!--end section-->
+        <!-- End contact -->
         
 <!--         
         <div class="sidebar">
@@ -502,7 +846,7 @@
         <div id="popupOverlay" class="popup-overlay" onclick="closeFullscreen()">
             <button id="closeButton" class="close-icon" onclick="closeFullscreen()">✕</button>
             <video id="popupVideo" width="100%" height="auto" loop controls playsinline>
-                <source src="emerald68/Slide2.mp4" type="video/mp4">
+                <source class="popupOverlaySource" src="emerald68_new/slide9.mp4" type="video/mp4">
             </video>
         </div>
         <footer class="footer footer-bar">
@@ -541,33 +885,187 @@
         <!-- Main Js -->
         <script src="js/app.js"></script>
         <script>
-            const video = document.getElementById('myVideo');
-            const playButton = document.getElementById('playButton');
+            const video1 = document.getElementById('myVideo1');
+            const video2= document.getElementById('myVideo2');
+            const video3 = document.getElementById('myVideo3');
+            const video4 = document.getElementById('myVideo4');
+            const video5 = document.getElementById('myVideo5');
+            const video6 = document.getElementById('myVideo6');
+            const video7= document.getElementById('myVideo7');
+            const video8 = document.getElementById('myVideo8');
+            const video9 = document.getElementById('myVideo9');
+            const video10 = document.getElementById('myVideo10');
+            const video11 = document.getElementById('myVideo11');
+            const video12= document.getElementById('myVideo12');
+            const video13 = document.getElementById('myVideo13');
+            const video14 = document.getElementById('myVideo14');
+            const video15 = document.getElementById('myVideo15');
+            const video16 = document.getElementById('myVideo16');
+            const video17= document.getElementById('myVideo17');
+            const video18 = document.getElementById('myVideo18');
+            const playButton1 = document.getElementById('playButton1');
+            const playButton2 = document.getElementById('playButton2');
+            const playButton3 = document.getElementById('playButton3');
             const popupOverlay = document.getElementById('popupOverlay');
             const popupVideo = document.getElementById('popupVideo');
         
-            function togglePlayPause() {
-                if (video.paused) {
-                    video.play();
-                    playButton.style.display = 'none';
-                    video.classList.remove('paused');
+            function togglePlayPause(id, playButton) {
+                if (document.getElementById(id).paused) {
+                    document.getElementById(id).play();
+                    document.getElementById(playButton).style.display = 'none';
+                    document.getElementById(id).classList.remove('paused');
                 } else {
-                    video.pause();
-                    playButton.style.display = 'flex';
-                    video.classList.add('paused');
+                    document.getElementById(id).pause();
+                    document.getElementById(playButton).style.display = 'flex';
+                    document.getElementById(id).classList.add('paused');
                 }
             }
 
-            video.addEventListener('click', function() {
-                togglePlayPause();
+            video1.addEventListener('click', function() {
+                togglePlayPause('myVideo1', 'playButton1');
             });
 
-            video.addEventListener('ended', function() {
-                playButton.style.display = 'flex';
-                video.classList.add('paused');
+            video1.addEventListener('ended', function() {
+                playButton1.style.display = 'flex';
+                video1.classList.add('paused');
             });
 
-            function openFullscreen() {
+            
+            video2.addEventListener('click', function() {
+                togglePlayPause('myVideo2', 'playButton2');
+            });
+
+            video2.addEventListener('ended', function() {
+                playButton2.style.display = 'flex';
+                video2.classList.add('paused');
+            });
+
+
+            video3.addEventListener('click', function() {
+                togglePlayPause('myVideo3', 'playButton3');
+            });
+
+            video4.addEventListener('ended', function() {
+                playButton4.style.display = 'flex';
+                video4.classList.add('paused');
+            });
+
+            video4.addEventListener('click', function() {
+                togglePlayPause('myVideo4', 'playButton4');
+            });
+
+            video5.addEventListener('ended', function() {
+                playButton5.style.display = 'flex';
+                video5.classList.add('paused');
+            });
+
+            video5.addEventListener('click', function() {
+                togglePlayPause('myVideo5', 'playButton5');
+            });
+            video5.addEventListener('ended', function() {
+                playButton5.style.display = 'flex';
+                video5.classList.add('paused');
+            });
+
+            video6.addEventListener('click', function() {
+                togglePlayPause('myVideo6', 'playButton6');
+            });
+            video6.addEventListener('ended', function() {
+                playButton6.style.display = 'flex';
+                video6.classList.add('paused');
+            });
+
+            video7.addEventListener('click', function() {
+                togglePlayPause('myVideo7', 'playButton7');
+            });
+            video7.addEventListener('ended', function() {
+                playButton7.style.display = 'flex';
+                video7.classList.add('paused');
+            });
+
+            video8.addEventListener('click', function() {
+                togglePlayPause('myVideo8', 'playButton8');
+            });
+            video8.addEventListener('ended', function() {
+                playButton8.style.display = 'flex';
+                video8.classList.add('paused');
+            });
+
+            video9.addEventListener('click', function() {
+                togglePlayPause('myVideo9', 'playButton9');
+            });
+            video9.addEventListener('ended', function() {
+                playButton9.style.display = 'flex';
+                video9.classList.add('paused');
+            });
+            video10.addEventListener('click', function() {
+                togglePlayPause('myVideo10', 'playButton10');
+            });
+            video10.addEventListener('ended', function() {
+                playButton10.style.display = 'flex';
+                video10.classList.add('paused');
+            });
+            video11.addEventListener('click', function() {
+                togglePlayPause('myVideo11', 'playButton11');
+            });
+            video11.addEventListener('ended', function() {
+                playButton11.style.display = 'flex';
+                video11.classList.add('paused');
+            });
+            video12.addEventListener('click', function() {
+                togglePlayPause('myVideo12', 'playButton12');
+            });
+            video12.addEventListener('ended', function() {
+                playButton12.style.display = 'flex';
+                video12.classList.add('paused');
+            });
+            video13.addEventListener('click', function() {
+                togglePlayPause('myVideo13', 'playButton13');
+            });
+            video13.addEventListener('ended', function() {
+                playButton13.style.display = 'flex';
+                video13.classList.add('paused');
+            });
+            video14.addEventListener('click', function() {
+                togglePlayPause('myVideo14', 'playButton14');
+            });
+            video14.addEventListener('ended', function() {
+                playButton14.style.display = 'flex';
+                video14.classList.add('paused');
+            });
+            video15.addEventListener('click', function() {
+                togglePlayPause('myVideo15', 'playButton15');
+            });
+            video15.addEventListener('ended', function() {
+                playButton15.style.display = 'flex';
+                video15.classList.add('paused');
+            });
+            video16.addEventListener('click', function() {
+                togglePlayPause('myVideo16', 'playButton16');
+            });
+            video16.addEventListener('ended', function() {
+                playButton16.style.display = 'flex';
+                video16.classList.add('paused');
+            });
+            video17.addEventListener('click', function() {
+                togglePlayPause('myVideo17', 'playButton17');
+            });
+            video17.addEventListener('ended', function() {
+                playButton17.style.display = 'flex';
+                video17.classList.add('paused');
+            });
+            video18.addEventListener('click', function() {
+                togglePlayPause('myVideo18', 'playButton18');
+            });
+            video18.addEventListener('ended', function() {
+                playButton18.style.display = 'flex';
+                video18.classList.add('paused');
+            });
+
+            function openFullscreen(src) {
+                console.log(src);
+                $(".popupOverlaySource").attr('src', src);
+                $("#popupVideo")[0].load();
                 popupOverlay.style.display = 'flex';
                 popupVideo.play();
             }
@@ -584,17 +1082,17 @@
 
 
             window.onscroll = function() {
-  var video = document.querySelector('.video-background');
-  var sidebar = document.querySelector('.sidebar');
-  var videoHeight = video.offsetHeight;
-  var scrollPosition = window.scrollY;
+            var video = document.querySelector('.video-background');
+            var sidebar = document.querySelector('.sidebar');
+            var videoHeight = video.offsetHeight;
+            var scrollPosition = window.scrollY;
 
   // Kiểm tra nếu cuộn qua video thì sidebar sẽ cố định ở góc trên bên phải
-  if (scrollPosition > videoHeight) {
-    sidebar.classList.add('fixed');
-  } else {
-    sidebar.classList.remove('fixed');
-  }
+//   if (scrollPosition > videoHeight) {
+//     sidebar.classList.add('fixed');
+//   } else {
+//     sidebar.classList.remove('fixed');
+//   }
 };
         </script>
     </body>
