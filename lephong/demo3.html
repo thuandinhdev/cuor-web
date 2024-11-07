@@ -855,38 +855,38 @@
         window.addEventListener('load', loadRemainingVideos);
 
 
-        // const popupOverlay = document.getElementById('popupOverlay');
-        // const popupVideo = document.getElementById('popupVideo');
+        const popupOverlay = document.getElementById('popupOverlay');
+        const popupVideo = document.getElementById('popupVideo');
 
-        // function togglePlayPause(id, playButton) {
-        //     if (document.getElementById(id).paused) {
-        //         document.getElementById(id).play();
-        //         document.getElementById(playButton).style.display = 'none';
-        //         document.getElementById(id).classList.remove('paused');
-        //     } else {
-        //         document.getElementById(id).pause();
-        //         document.getElementById(playButton).style.display = 'flex';
-        //         document.getElementById(id).classList.add('paused');
-        //     }
-        // }
+        function togglePlayPause(id, playButton) {
+            if (document.getElementById(id).paused) {
+                document.getElementById(id).play();
+                document.getElementById(playButton).style.display = 'none';
+                document.getElementById(id).classList.remove('paused');
+            } else {
+                document.getElementById(id).pause();
+                document.getElementById(playButton).style.display = 'flex';
+                document.getElementById(id).classList.add('paused');
+            }
+        }
 
-        // function openFullscreen(src) {
-        //     console.log(src);
-        //     $(".popupOverlaySource").attr('src', src);
-        //     $("#popupVideo")[0].load();
-        //     popupOverlay.style.display = 'flex';
-        //     popupVideo.play();
-        // }
-        // function closeFullscreen() {
-        //     popupOverlay.style.display = 'none';
-        //     popupVideo.pause();
-        // }
-        // popupOverlay.addEventListener('click', function () {
-        //     closeFullscreen();
-        // });
+        function openFullscreen(src) {
+            console.log(src);
+            $(".popupOverlaySource").attr('src', src);
+            $("#popupVideo")[0].load();
+            popupOverlay.style.display = 'flex';
+            popupVideo.play();
+        }
+        function closeFullscreen() {
+            popupOverlay.style.display = 'none';
+            popupVideo.pause();
+        }
+        popupOverlay.addEventListener('click', function () {
+            closeFullscreen();
+        });
 
 
-        // var lightbox = new SimpleLightbox('.simplelightbox');
+        var lightbox = new SimpleLightbox('.simplelightbox');
 
     </script>
 </body>
