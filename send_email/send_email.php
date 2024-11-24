@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Cấu hình nội dung email
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
-        $mail->Subject = htmlspecialchars('emai được gửi từ CUOR website');
+        $mail->Subject = htmlspecialchars('CUOR website');
 
         // Lấy nội dung email từ file
         $email_user_body = file_get_contents('mailbody_user.txt');
