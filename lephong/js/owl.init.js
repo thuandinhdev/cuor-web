@@ -34,7 +34,7 @@ $('#client-four').owlCarousel({
           items:2
       },
       1000:{
-          items:5
+          items:4
       }
   }
 });
