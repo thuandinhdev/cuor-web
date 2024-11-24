@@ -1,894 +1,866 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from shreethemes.in/landrick/layouts/index-coworking.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Aug 2020 05:27:40 GMT -->
-
+    
+<!-- Mirrored from shreethemes.in/landrick/layouts/index-shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Aug 2020 05:26:42 GMT -->
 <head>
-    <meta charset="utf-8" />
-    <title>CUOR</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CUOR" />
-    <meta name="keywords" content="CUOR" />
-    <meta name="author" content="CUOR" />
-    <meta name="website" content="http://cuortech.com" />
-    <meta name="robots" content="noindex, nofollow">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="emerald68/logo-cuor.png">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <!-- Icons -->
-    <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
-    <!-- Icons -->
-    <link href="css/magnific-popup.css" rel="stylesheet" type="text/css" />
-    <!-- Slider -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
-    <!-- Animation -->
-    <link href="css/animate.css" rel="stylesheet" />
-    <link href="css/animations-delay.css" rel="stylesheet" />
-    <!-- Main Css -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
-    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <meta charset="utf-8" />
+        <title>CUOR</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="CUOR" />
+        <meta name="keywords" content="CUOR" />
+        <meta name="author" content="CUOR" />
+        <meta name="email" content="cuortech@cuortech.com" />
+        <meta name="website" content="http://cuortech.com" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="emerald68/logo-cuor.png">
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <!-- Icons -->
+        <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+        <!-- FLEXSLIDER -->
+        <link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+        <!-- Slider -->               
+        <link rel="stylesheet" href="css/owl.carousel.min.css"/> 
+        <link rel="stylesheet" href="css/owl.theme.default.min.css"/> 
+        <!-- Main Css -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+        <style>
+            #topnav, #topnav.nav-sticky{
+                background: #000;
+            }
+            #topnav .navigation-menu > li > a {
+                color: #fff;
+            }
+            #topnav .navigation-menu {
+                justify-content:end;
+            }
 
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.5.0/simple-lightbox.min.css" rel="stylesheet">
-
-
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif !important;
-        }
-
-        #topnav {
-            height: 108px;
-            background-color: #000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            position: unset;
-        }
-
-        #topnav.nav-sticky {
-            background-color: #000;
-        }
-
-        #topnav .logo img {
-            height: 70px;
-        }
-
-        #topnav .logo {
-            float: none;
-        }
-
-        .banner {
-            display: flex;
-            background: linear-gradient(45deg, #881124 50%, #f49a7b 80%, #3b4cc0 100%);
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            height: 54px;
-            max-height: 54px;
-            padding: 0;
-        }
-
-        .footer {
-            background: #000;
-        }
-
-        .container {
-            max-width: 1284px;
-        }
-
-        .video-background {
+           
+            .main-slider {
+            width: 100vw;      
+            height: 100vh;     
             position: relative;
-            overflow: hidden;
-            width: 100vw;
-            height: 611px;
-        }
-
-        .video-background video {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-        }
-
-        .bg-light {
-            padding-top: 10px;
-            padding-bottom: 10px;
-        }
-
-        .container {
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-
-        h4 {
-            font-size: 18px;
-        }
-
-        .play-icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 2;
-        }
-
-        .video.paused {
-            filter: brightness(0.5);
-        }
-
-        .fullscreen-icon {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 24px;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-            border-radius: 5px;
-            z-index: 2;
-        }
-
-        .play-icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            cursor: pointer;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 2;
-        }
-
-        .fullscreen-icon {
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            font-size: 24px;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-            border-radius: 5px;
-            z-index: 2;
-        }
-
-        .popup-overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background: rgba(0, 0, 0, 0.9);
-            justify-content: center;
-            align-items: center;
-            z-index: 999;
-        }
-
-
-        .popup-overlay video {
-            max-width: 90vw;
-            max-height: 90vh;
-        }
-
-        .close-icon {
-            position: absolute;
-            top: 20px;
-            right: 25px;
-            font-size: 24px;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 8px;
-            border-radius: 5px;
-            z-index: 1000;
-        }
-
-        @media(max-width: 1284px) {
-            .video-background>.container {
-                display: none !important;
+            overflow: hidden;  
+            z-index: 1;        
             }
-        }
-    </style>
-</head>
 
-<body>
-    <!-- Loader -->
-    <div id="preloader">
-        <div id="status">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Loader -->
+            .main-slider .slides li {
+            width: 100%;       
+            height: 100%;      
+            }
 
-    <!-- Navbar STart -->
-    <header id="topnav" class="defaultscroll sticky">
-        <div class="container">
-            <a class="logo" href="index.html">
-                <img src="emerald68/logo.png" alt="">
-            </a>
-        </div>
-    </header>
-    <div class="banner">
-        <h4 class="title text-light">
-            Breath of Living Spaces, Shape of Future, One Simulation at a Time
-        </h4>
-    </div>
-    <div class="video-background bg-home d-flex align-items-center">
-        <video id="backgroundVideo" autoplay loop muted playsinline onloadeddata="this.playbackRate = 0.5;">
-            <source src="emerald68/wsw_01.mp4" type="video/mp4">
-        </video>
-        <div class="container">
-            <div class="row ">
-                <div class="col-6">
-                    <div class="title-heading text-white  ">
-                        <h1 class="heading mb-3">Natural ventilation analysis using CFD simulation</h1>
-                        <p class="para-desc ">The Emerald 68 building has been remodeled for investigating its natural
-                            ventilation in relation to local wind directions.
-                            The evaluation methodology was based on the Building and Construction Authority's (BCA)
-                            Green Mark (GM) Computational Fluid Dynamics (CFD) analysis from 2021.
-                            This paper aims to provide project investors with essential insights for evaluating and
-                            enhancing natural ventilation quality in buildings. However, it's important to note that
-                            this analysis was based on a reconstructed building model derived from estimations available
-                            on the website XXX. Therefore, the results only represent a partial assessment of the
-                            building's natural ventilation capabilities.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Navbar End -->
+            .main-slider .slides li video {
+            width: 100%;       
+            height: 100%;      
+            object-fit: cover; 
+            }
 
-    <section class="section pt-0 pb-0">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <div class="section-title mb-4">
-                        <h4 class="title ">
-                            Summary</h4>
-                        <p class=" mb-0">The Residential Building Criteria requires that units with sufficient natural
-                            ventilation have to achieve a weight-average area wind speed of 0.6 m/s and more.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <p class="para-desc ">
-                        The findings indicated that only apartment A02 approximately attained the benchmark for adequate
-                        natural ventilation among the 12 apartments on the typical floor.
-                        Apartments A11 and A12 exhibited velocities much below the threshold for adequate natural
-                        ventilation.
-                    </p>
-                </div>
-                <div class="col-lg-6 col-md-6">
-                    <a class="simplelightbox" href="emerald68_new/slide5.png"><img id="imagePreview"
-                            src="emerald68_new/slide5.png" class="img-fluid shadow rounded" alt=""></a>
-                </div>
-            </div><!--end row-->
-        </div>
-        <div class="bg-light">
+            @media (max-width: 768px) {
+                .main-slider .slides{
+                    height: 100%;
+                }
+                .main-slider .slides li {
+                    height: 100% !important;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden; 
+                }
+
+                .main-slider .slides li video {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%); 
+                    object-fit: cover;
+                    width: 100vw; 
+                    height: 100vh; 
+                }
+                #topnav .navigation-menu > li > a {
+                    color: #000;
+                }
+            }
+
+
+            .slider-thumbnails {
+            position: absolute;
+            bottom: 20px;        
+            right:0px;
+            transform: translateX(-50%);
+            z-index: 2;          
+            }
+
+            .slider-thumbnails ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            }
+
+            .slider-thumbnails ul li {
+            display: inline-block;
+            margin: 0 5px;
+            }
+
+            .slider-thumbnails ul li img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: opacity 0.3s ease;
+            border-radius: 50%; 
+            object-fit: cover;  
+            }
+
+            /* Khi hover, thumbnail sẽ sáng lên */
+            .slider-thumbnails ul li img:hover {
+            opacity: 1;
+            }
+            .slider-thumbnails ul li .active img {
+            opacity: 1;
+            }
+            .red-color{
+                color: #881124;
+            }
+            .bg-black {
+                background: #000 !important;
+            }
+            .section.bg-black{
+                background-color: black; 
+            }
+            .proces-block {
+                width: 200px;
+                opacity: 0.8;
+                text-align: right;
+            }
+            .course-feature.active {
+                transform: translateY(-30px) !important;
+                opacity: 1;
+            }
+            .course-feature{
+                opacity: 0.5;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- Navbar STart -->
+        <header id="topnav" class="defaultscroll sticky bg-black">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <div class="section-title mb-4">
-                            <h4 class="title">
-                                Pressure</h4>
-                            <p class="mb-0">The pressure contours of the building are presented in various directions
-                                including front, rear, left, right and isometric views.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 ">
-                        <a class="simplelightbox" href="emerald68_new/slide7.png"><img src="emerald68_new/slide7.png"
-                                class="img-fluid shadow rounded" alt=""></a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 ">
-                        <p class="para-desc ">The pressure is largely concentrated behind the building and towards the
-                            highway.</p>
-                    </div>
-                </div><!--end row-->
-            </div>
-        </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <div class="section-title mb-4">
-                        <h4 class="title ">Overall velocity</h4>
-                        <p class="mb-0">The velocity distribution results have been presented at different elevations.
-                        </p>
+                <!-- Logo container-->
+                <div>
+                    <a class="logo" href="index.html">
+                        <img src="images/logo-cuor.webp" height="50" alt="">
+                    </a>
+                </div>                 
+                <!--end login button-->
+                <!-- End Logo container-->
+                <div class="menu-extras">
+                    <div class="menu-item">
+                        <!-- Mobile menu toggle-->
+                        <a class="navbar-toggle">
+                            <div class="lines">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </a>
+                        <!-- End mobile menu toggle-->
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-6 ">
-                    <p class="para-desc ">The velocity distribution is shown on floors 3, 12, 29 and 37. The results
-                        showed strong and weak wind areas as well as showed recirculating wind areas.</p>
-                </div>
-                <div class="col-lg-6 col-md-6" style="position: relative;">
-                    <video preload="none" data-src="emerald68_new/slide9.mp4" id="myVideo1" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                        playsinline onloadeddata="this.playbackRate = 0.5;">
+        
+                <div id="navigation">
+                    <!-- Navigation Menu-->   
+                    <ul class="navigation-menu">
+                        <li><a href="#about-ac">About</a></li>
+                        <li><a href="#process-ac">Process</a></li>
+                        <li><a href="#services-ac">Services</a></li>
+                        <li><a href="#pricing-ac">Pricing</a></li>
+                        <li><a href="#study-ac">Study</a></li>
+                        <li><a href="#contact-ac">Contact</a></li>
+                    </ul><!--end navigation menu-->
+                </div><!--end navigation-->
+            </div><!--end container-->
+        </header><!--end header-->
+        
+        <!-- Hero Start -->
+        <section class="main-slider">
+            <ul class="slides"> 
+                <li class="bg-slider slider-rtl-2 d-flex align-items-center">
+                    <video autoplay loop muted playsinline class="slider-video">
+                      <source src="images/video/slide1.mp4" type="video/mp4">
                     </video>
-                    <div id="playButton1" class="play-icon" onclick="togglePlayPause('myVideo1', 'playButton1')">
-                        <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                            <polygon points="10,8 16,12 10,16" fill="#881124" />
-                        </svg>
-                    </div>
-                    <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide9.mp4')">⛶</button>
-                </div>
-                <div class="col-lg-6 col-md-6" style="position: relative;">
-                    <video preload="none" data-src="emerald68_new/slide10.mp4" id="myVideo2" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                        playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                    <div id="playButton2" class="play-icon" onclick="togglePlayPause('myVideo2', 'playButton2')">
-                        <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                            <polygon points="10,8 16,12 10,16" fill="#881124" />
-                        </svg>
-                    </div>
-                    <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide10.mp4')">⛶</button>
-                </div>
-                <div class="col-lg-6 col-md-6" style="position: relative;">
-                    <video preload="none" data-src="emerald68_new/slide11.mp4" id="myVideo3" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                        playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                    <div id="playButton3" class="play-icon" onclick="togglePlayPause('myVideo3', 'playButton3')">
-                        <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                            <polygon points="10,8 16,12 10,16" fill="#881124" />
-                        </svg>
-                    </div>
-                    <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide11.mp4')">⛶</button>
-                </div>
-                <div class="col-lg-6 col-md-6" style="position: relative;">
-                    <video preload="none" data-src="emerald68_new/slide12.mp4" id="myVideo4" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                        playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                    <div id="playButton4" class="play-icon" onclick="togglePlayPause('myVideo4', 'playButton4')">
-                        <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                            <polygon points="10,8 16,12 10,16" fill="#881124" />
-                        </svg>
-                    </div>
-                    <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide12.mp4')">⛶</button>
-                </div>
-                <div class="col-lg-6 col-md-6" style="position: relative;">
-                    <video preload="none" data-src="emerald68_new/slide13.mp4" id="myVideo5" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                        playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                    <div id="playButton5" class="play-icon" onclick="togglePlayPause('myVideo5', 'playButton5')">
-                        <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                            <polygon points="10,8 16,12 10,16" fill="#881124" />
-                        </svg>
-                    </div>
-                    <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide13.mp4')">⛶</button>
-                </div>
-            </div>
-        </div>
-        <div class="bg-light">
+                  </li>
+                  <li class="bg-slider slider-rtl-2 d-flex align-items-center">
+                    <video autoplay loop muted playsinline class="slider-video">
+                      <source src="images/video/slide2.mp4" type="video/mp4">
+                    </video>
+                  </li>
+                  <li class="bg-slider slider-rtl-2 d-flex align-items-center">
+                    <video autoplay loop muted playsinline class="slider-video">
+                      <source src="images/video/slide3.mp4" type="video/mp4">
+                    </video>
+                  </li>
+                  <li class="bg-slider slider-rtl-2 d-flex align-items-center">
+                    <video autoplay loop muted playsinline class="slider-video">
+                      <source src="images/video/slide4.mp4" type="video/mp4">
+                    </video>
+                  </li>
+            </ul>
+            <!-- <div class="slider-thumbnails">
+                <ul>
+                  <li><a href="#" class="thumbnail-link" data-slide="0"><img src="images/video/thumbnail/thumbnail1.webp" alt="Thumbnail 1"></a></li>
+                  <li><a href="#" class="thumbnail-link" data-slide="1"><img src="images/video/thumbnail/thumbnail2.webp" alt="Thumbnail 2"></a></li>
+                  <li><a href="#" class="thumbnail-link" data-slide="2"><img src="images/video/thumbnail/thumbnail3.webp" alt="Thumbnail 3"></a></li>
+                  <li><a href="#" class="thumbnail-link" data-slide="3"><img src="images/video/thumbnail/thumbnail4.webp" alt="Thumbnail 4"></a></li>
+                </ul>
+            </div> -->
+        </section>
+        <!-- Hero End -->
+        <!-- FEATURES START -->
+        <section class="section">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <div class="section-title mb-4">
-                            <h4 class="title">Apartment velocity</h4>
-                            <p class="mb-0">The wind velocity distribution for each apartment on a typical floor has
-                                been presented in detail as below.
-                            </p>
-                            <p class="mb-0">
-                                The results shown below illustrate the three-dimensional spatial and velocity
-                                distribution within each apartment.
-                                The simulation findings indicate a significant disparity in velocity among the
-                                apartments.
-                            </p>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card course-feature text-center overflow-hidden rounded shadow border-0" data-slide="0">
+                            <div class="card-body py-5">
+                                <div class="icon">
+                                    <img src="images/bg/greenbuilding.png" class="avatar avatar-small" alt="">
+                                </div>
+                                
+                                <h4 class="mt-3"><a href="javascript:void(0)" class="title text-dark">Green Building</a></h4>
+                                <p class="text-dark">Description description description description description description description description</p>
+                                <a href="javascript:void(0)" class="red-color read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide15.mp4" id="myVideo6" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton6" class="play-icon" onclick="togglePlayPause('myVideo6', 'playButton6')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
+                    </div><!--end col--> 
+                    
+                    <div class="col-md-3">
+                        <div class="card course-feature text-center overflow-hidden rounded shadow border-0" data-slide="1">
+                            <div class="card-body py-5">
+                                <div class="icon">
+                                    <img src="images/bg/healthyhome.png" class="avatar avatar-small" alt="">
+                                </div>
+                                
+                                <h4 class="mt-3"><a href="javascript:void(0)" class="title text-dark">Healthy Home</a></h4>
+                                <p class="text-dark">Description description description description description description description description</p>
+                                <a href="javascript:void(0)" class="red-color read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
                         </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide15.mp4')">⛶</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide16.mp4" id="myVideo7" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton7" class="play-icon" onclick="togglePlayPause('myVideo7', 'playButton7')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
+                    </div><!--end col--> 
+                    
+                    <div class="col-md-3">
+                        <div class="card course-feature text-center overflow-hidden rounded shadow border-0" data-slide="2">
+                            <div class="card-body py-5">
+                                <div class="icon">
+                                    <img src="images/bg/factoryenvironment.jpeg" class="avatar avatar-small" alt="">
+                                </div>
+                                
+                                <h4 class="mt-3"><a href="javascript:void(0)" class="title text-dark">Factory Env</a></h4>
+                                <p class="text-dark">Description description description description description description description description</p>
+                                <a href="javascript:void(0)" class="red-color read-more">Read More <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
                         </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide16.mp4')">⛶</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide17.mp4" id="myVideo8" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton8" class="play-icon" onclick="togglePlayPause('myVideo8', 'playButton8')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
+                    </div><!--end col--> 
+                    <div class="col-md-3">
+                        <div class="card course-feature text-center overflow-hidden rounded shadow border-0" data-slide="3">
+                            <div class="card-body py-5">
+                                <div class="icon">
+                                    <img src="images/bg/agriculturefields .jpeg" class="avatar avatar-small" alt="">
+                                </div>
+                                
+                                <h4 class="mt-3"><a href="javascript:void(0)" class="title text-dark">Agriculture Fields</a></h4>
+                                <p class="text-dark">Description description description description description description description description</p>
+                                <a href="javascript:void(0)" class="red-color read-more red-color">Read More <i class="mdi mdi-chevron-right"></i></a>
+                            </div>
                         </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide17.mp4')">⛶</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide18.mp4" id="myVideo9" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton9" class="play-icon" onclick="togglePlayPause('myVideo9', 'playButton9')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
-                        </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide18.mp4')">⛶</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide19.mp4" id="myVideo10" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton10" class="play-icon" onclick="togglePlayPause('myVideo10', 'playButton10')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
-                        </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide19.mp4')">⛶</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide20.mp4" id="myVideo11" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton11" class="play-icon" onclick="togglePlayPause('myVideo11', 'playButton11')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
-                        </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide20.mp4')">⛶</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide21.mp4" id="myVideo12" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton12" class="play-icon" onclick="togglePlayPause('myVideo12', 'playButton12')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
-                        </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide21.mp4')">⛶</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide22.mp4" id="myVideo13" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton13" class="play-icon" onclick="togglePlayPause('myVideo13', 'playButton13')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
-                        </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide22.mp4')">⛶</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide23.mp4" id="myVideo14" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton14" class="play-icon" onclick="togglePlayPause('myVideo14', 'playButton14')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
-                        </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide23.mp4')">⛶</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide24.mp4" id="myVideo15" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton15" class="play-icon" onclick="togglePlayPause('myVideo15', 'playButton15')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
-                        </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide24.mp4')">⛶</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide25.mp4" id="myVideo16" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton16" class="play-icon" onclick="togglePlayPause('myVideo16', 'playButton16')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
-                        </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide25.mp4')">⛶</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6" style="position: relative;">
-                        <video preload="none" data-src="emerald68_new/slide26.mp4" id="myVideo17" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                            playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                        <div id="playButton17" class="play-icon" onclick="togglePlayPause('myVideo17', 'playButton17')">
-                            <svg width="68" height="68" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                                <polygon points="10,8 16,12 10,16" fill="#881124" />
-                            </svg>
-                        </div>
-                        <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide26.mp4')">⛶</button>
-                    </div>
+                    </div><!--end col--> 
                 </div><!--end row-->
-            </div>
-        </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <div class="section-title mb-4">
-                        <h4 class="title">
-                            Modeling</h4>
-                        <p class="mb-0">The apartments were built based on images from the website of project X.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 ">
-                    <a class="simplelightbox" href="emerald68_new/slide28.png"><img src="emerald68_new/slide28.png"
-                            class="img-fluid shadow rounded" alt=""></a>
-                </div>
-                <div class="col-lg-6 col-md-6 ">
-                    <p class="para-desc ">The computational domain shall encompass the area of interest, the attributes
-                        of the local environment, and the buildings located within a distance of at least three times
-                        the length of the longest border measurement of the development.</p>
+            </div><!--end container-->
+        </section><!--end section-->
+        <!-- FEATURES END -->
 
-                    <p class="para-desc ">Topographical information must be incorporated into the simulation models if
-                        the building and adjacent development are situated in hilly terrain. The computational domain
-                        will be expanded from the outer edge of the proximity regions to the border to avoid
-                        non-physical airflow solutions when convergence is achieved.</p>
-
-                    <p class="para-desc ">The computational domain must be oriented in accordance with the direction of
-                        wind flow. The domain height will be increased to about three times the height of the highest
-                        building in the designated area.</p>
-                </div>
-                <div class="col-lg-6 col-md-6 ">
-                    <a class="simplelightbox" href="emerald68_new/slide29.png"><img src="emerald68_new/slide29.png"
-                            class="img-fluid shadow rounded" alt=""></a>
-                </div>
-                <div class="col-lg-6 col-md-6" style="position: relative;">
-                    <video preload="none" data-src="emerald68_new/slide30.mp4" id="myVideo18" class="paused video" loading="lazy" width="100%" height="auto" loop muted
-                        playsinline onloadeddata="this.playbackRate = 0.5;"></video>
-                    <div id="playButton18" class="play-icon" onclick="togglePlayPause('myVideo18', 'playButton18')">
-                        <svg width="68" height="68" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="12" cy="12" r="10" fill="rgba(0, 0, 0, 0.5)" />
-                            <polygon points="10,8 16,12 10,16" fill="#881124" />
-                        </svg>
-                    </div>
-                    <button id="fullscreenButton" class="fullscreen-icon" onclick="openFullscreen('emerald68_new/slide30.mp4')">⛶</button>
-                </div>
-            </div><!--end row-->
-        </div>
-        <div class="bg-light">
+        <!-- Start Popular -->
+        <section class="section">
             <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-12">
-                        <div class="section-title mb-4">
-                            <h4 class="title ">Methodology</h4>
-                            <p class="mb-0">IThe simulation of a green building in OpenFOAM uses a computational fluid
-                                dynamics (CFD) approach based on the Reynolds-Averaged Navier-Stokes (RANS) equations
-                            </p>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-3">
+                            <h4 class="title mb-4">LET <b class="red-color">CUOR</b> VATILATE YOUR SPACE TO PERFECT</h4>
                         </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 ">
-                        <p class="para-desc ">The equations are solved in a 3D domain (x, y, z) to describe the flow of
-                            air around the building and its surrounding environment. The simulation assumes that the
-                            flow is:
-
-                        </p>
-                        <ul>
-                            <li>Incompressible: The density of the air remains constant, which is a reasonable
-                                assumption for most building applications.</li>
-                            <li>Turbulent: The flow is characterized by chaotic and unpredictable fluctuations, as it is
-                                typically the case for air movement around buildings.</li>
-                            <li>Steady-state: The flow conditions are considered to be unchanging over time, although
-                                this can be modified to account for varying wind conditions.</li>
-                        </ul>
-                        <p class="para-desc ">The OpenFOAM software utilizes a finite volume method to solve the RANS
-                            equations. These equations, along with the standard k-epsilon turbulence model, form the
-                            foundation of the simulation.</p>
-                        <p class="para-desc ">The SIMPLE (Semi-Implicit Method for Pressure-Linked Equations) algorithm
-                            is implemented within OpenFOAM's simpleFoam solver. This algorithm is used to solve the
-                            coupled equations for pressure and velocity, which are essential for accurately describing
-                            the fluid flow field.</p>
-
-
-                    </div>
-                    <div class="col-lg-6 col-md-6 ">
-                        <a class="simplelightbox" href="emerald68_new/slide32.png"><img src="emerald68_new/slide32.png"
-                                class="img-fluid shadow rounded" alt=""></a>
-                    </div>
+                    </div><!--end col-->
                 </div><!--end row-->
-            </div>
-        </div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <div class="section-title mb-4">
-                        <h4 class="title">
-                            Responsibility</h4>
-                        <p class="mb-0">Non-Affiliation Disclaimer: We declare no affiliation, sponsorship, nor any
-                            partnerships with Singapore Building Construction Authority (BCA) who issues Green Mark
-                            criteria and any relevant government agencies.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 ">
-                    <a class="simplelightbox" href="emerald68_new/slide34.png"><img src="emerald68_new/slide34.png"
-                            class="img-fluid shadow rounded" alt=""></a>
-                </div>
-                <div class="col-lg-6 col-md-6 ">
-                    <p class="para-desc ">
-                        Special thanks to:<br>
-                        CFD Expert: Phan Huu Lam<br>
-                        Building Ventilation Expert: Le Duong Tuan<br>
-                        Developer: Dinh Duy Thuan<br>
-                        RP: La Ho<br>
-                        For more information, please contact: cuor@cuortech.com
-                    </p>
-                </div>
-            </div><!--end row-->
-        </div>
-    </section>
 
-    <!-- Start Contact -->
-    <section class="section p-0">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-5 col-md-6 pt-2 pt-sm-0 order-2 order-md-1">
-                    <div class="card shadow rounded border-0">
-                        <div class="card-body py-5">
-                            <h4 class="card-title">Get In Touch !</h4>
-                            <div class="custom-form mt-4">
-                                <div id="message"></div>
-                                <form method="post" action="http://shreethemes.in/landrick/layouts/php/contact.php"
-                                    name="contact-form" id="contact-form">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group position-relative">
-                                                <label>Your Name <span class="text-danger">*</span></label>
-                                                <i data-feather="user" class="fea icon-sm icons"></i>
-                                                <input name="name" id="name" type="text" class="form-control pl-5"
-                                                    placeholder="First Name :">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group position-relative">
-                                                <label>Your Email <span class="text-danger">*</span></label>
-                                                <i data-feather="mail" class="fea icon-sm icons"></i>
-                                                <input name="email" id="email" type="email" class="form-control pl-5"
-                                                    placeholder="Your email :">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group position-relative">
-                                                <label>Subject</label>
-                                                <i data-feather="book" class="fea icon-sm icons"></i>
-                                                <input name="subject" id="subject" type="text" class="form-control pl-5"
-                                                    placeholder="Subject">
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="form-group position-relative">
-                                                <label>Comments</label>
-                                                <i data-feather="message-circle" class="fea icon-sm icons"></i>
-                                                <textarea name="comments" id="comments" rows="4"
-                                                    class="form-control pl-5" placeholder="Your Message :"></textarea>
-                                            </div>
-                                        </div>
-                                    </div><!--end row-->
-                                    <div class="row">
-                                        <div class="col-sm-12 text-center">
-                                            <input type="submit" id="submit" name="send"
-                                                class="submitBnt btn btn-primary btn-block" value="Send Message">
-                                            <div id="simple-msg"></div>
-                                        </div><!--end col-->
-                                    </div><!--end row-->
-                                </form><!--end form-->
-                            </div><!--end custom-form-->
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 d-flex justify-content-center align-items-center">
+                        <div class="card shop-list border-0 position-relative overflow-hidden">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="#"><img src="images/teaser/teaser_f2.webp" class="img-fluid" alt=""></a>
+                                <a href="#" class="overlay-work">
+                                    <img src="images/teaser/teaser_f2.webp" class="img-fluid" alt="">
+                                </a>
+                            </div>
                         </div>
+                    </div><!--end col-->
+                    
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 d-flex justify-content-center align-items-center">
+                        <div class="card shop-list border-0 position-relative overflow-hidden">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="#"><img src="images/teaser/teaser_f3.webp" class="img-fluid" alt=""></a>
+                                <a href="#" class="overlay-work">
+                                    <img src="images/teaser/teaser_f3.webp" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 d-flex justify-content-center align-items-center">
+                        <div class="card shop-list border-0 position-relative overflow-hidden">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="#"><img src="images/teaser/teaser_f4.webp" class="img-fluid" alt=""></a>
+                                <a href="#" class="overlay-work">
+                                    <img src="images/teaser/teaser_f4.webp" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 d-flex justify-content-center align-items-center">
+                        <div class="card shop-list border-0 position-relative overflow-hidden">
+                            <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                <a href="#"><img src="images/teaser/teaser_f1.webp" class="img-fluid" alt=""></a>
+                                <a href="#" class="overlay-work">
+                                    <img src="images/teaser/teaser_f1.webp" class="img-fluid" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section>
+        <!-- End Popular -->
+        <section class="section bg-black" id="process-ac">
+            <div class="row justify-content-center bg-black">
+                <div class="col-12 text-center">
+                    <div class="section-title mb-4 pb-2">
+                        <h4 class="title mb-4 text-white">ANALYSIS PROCESS</h4>
                     </div>
                 </div><!--end col-->
-
-                <div class="col-lg-7 col-md-6 order-1 order-md-2">
-                    <div class="card border-0">
-                        <div class="card-body p-0">
-                            <img src="emerald68_new/slide5.png" class="img-fluid" alt="">
+            </div><!--end row-->
+            <div class="row bg-black">
+                <div class="col-12 mt-4 pt-2">
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade active show" id="Month" role="tabpanel" aria-labelledby="Monthly">    
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mb-4 pb-2 d-flex justify-content-center " style=" background-image: url('images/bg/process_problem.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                                    <div class="card pricing-rates bg-light rounded text-center border-0 proces-block text-sm-left">
+                                        <div class="card-body py-5">
+                                            <h2 class="title text-uppercase mb-4 red-color">DEFINE PROBLEM</h2>
+                                            <ul class="mb-0 pl-0">
+                                                <li>Green Building</li>
+                                                <li>Healthy Home</li>
+                                                <li>Factory</li>
+                                                <li>Agriculture</li>
+                                                <li>Aerodynamic Optimization</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mb-4 pb-2 d-flex justify-content-center " style=" background-image: url('images/bg/process_modeling.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                                    <div class="card pricing-rates bg-light rounded text-center border-0 proces-block text-sm-left">
+                                        <div class="card-body py-5">
+                                            <h2 class="title text-uppercase mb-4 red-color">BUILD MODEL</h2>
+                                            <ul class="mb-0 pl-0">
+                                                <li>Apartment</li>
+                                                <li>Building</li>
+                                                <li>Human</li>
+                                                <li>Factory</li>
+                                                <li>Restaurant</li>
+                                                <li>Tree</li>
+                                                <li>Vehicle</li>
+                                                <li>Machine</li>
+                                                <li>Etc...</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mb-4 pb-2 d-flex justify-content-center " style=" background-image: url('images/bg/process_run.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                                    <div class="card pricing-rates bg-light rounded text-center border-0 proces-block text-sm-left">
+                                        <div class="card-body py-5">
+                                            <h2 class="title text-uppercase mb-4 red-color">RUN SIMULATION</h2>
+                                            <ul class="mb-0 pl-0">
+                                                <li>Fluid Flow</li>
+                                                <li>Heat Transfer</li>
+                                                <li>Species and Passive Scalars</li>
+                                                <li>Multiphase</li>
+                                                <li>Reacting Flow</li>
+                                                <li>Electrochemistry</li>
+                                                <li>Battery</li>
+                                                <li>Aeroacoustic</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                                <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2 mb-4 pb-2 d-flex justify-content-center " style=" background-image: url('images/bg/process_report.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                                    <div class="card pricing-rates bg-light rounded text-center border-0 proces-block text-sm-left">
+                                        <div class="card-body py-5">
+                                            <h2 class="title text-uppercase mb-4 red-color">MAKE REPORT</h2>
+                                            <ul class="mb-0 pl-0">
+                                                <li>Standards compliance</li>
+                                                <li>BCA Green Mark 2021</li>
+                                                <li>LEED of USGBC</li>
+                                                <li>VGBC LOTUS</li>
+                                                <li>ASHRAE (90.1, 62.1, 55, 189.1,...)</li>
+                                                <li>BREEAM</li>
+                                                <li>CASBEE</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><!--end col-->
+                            </div><!--end row-->
                         </div>
                     </div>
                 </div><!--end col-->
             </div><!--end row-->
-        </div><!--end container-->
-
-    </section><!--end section-->
-    <!-- End contact -->
-
-
-    <div id="popupOverlay" class="popup-overlay" onclick="closeFullscreen()">
-        <button id="closeButton" class="close-icon" onclick="closeFullscreen()">✕</button>
-        <video id="popupVideo" width="100%" height="auto" loop controls playsinline>
-            <source class="popupOverlaySource"  type="video/mp4">
-        </video>
-    </div>
-    <footer class="footer footer-bar">
-        <div class="container text-center">
-            <div class="row align-items-center">
-                <div class="col-sm-6">
-                    <div class="text-sm-left">
-                        <p class="mb-0">© 2024 CUOR</p>
-                    </div>
-                </div>
+        </section><!--end section-->
+        <section class="section">
+            <div class="container" id="about-ac">
+                <div class="row justify-content-center ">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-3 mt-4 pt-3 ">
+                            <h4 class="title mb-4 text-dark">OUR STORY</h4>
+                            <p class="text-dark mb-0 text-sm-left">
+                                Empowering sustainable design with advanced CFD technology is at the core of our identity. We are committed to revolutionizing the way residential buildings are designed and optimized for energy efficiency and thermal comfort. Our team is dedicated to pushing the boundaries of CFD applications in the pursuit of environmental sustainability.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
             </div>
+        </section>
+        <section class="section bg-black">
+            <div class="container" id="services-ac">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-3 mt-4 pt-3 container">
+                            <h4 class="title mb-4 text-white">OUR SERVICES</h4>
+                            <p class="text-white text-sm-left mb-0"><b class="red-color">CUOR CFD</b> provides advanced computational fluid dynamics (CFD) solutions tailored to diverse architectural and engineering challenges, leveraging cutting-edge numerical methods to optimize airflow and enhance the built environment. We offer a comprehensive suite of services, encompassing simulation, consultation, and specialized testing, designed to create safer, healthier, and more sustainable spaces</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <img src="images/cfd/service1.webp" class="img-fluid shadow rounded" alt="">
+                            </div>
+                            <div class="col-lg-5  d-flex justify-content-center align-items-center">
+                                <div class="section-title text-sm-left mb-4 pb-3 mt-4 pt-3 ">
+                                    <h4 class="title mb-4 text-white">CFD Simulation & Analysis</h4>
+                                    <p class="text-white mb-0">Our expertise extends to the detailed modeling and simulation of airflow within various contexts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                                <div class="section-title text-sm-left mb-4 pb-3 mt-4 pt-3 ">
+                                    <h4 class="title mb-4 text-white">Consulting & Training</h4>
+                                    <p class="text-white mb-0">We offer expert consultation and tailored training programs to support the broader adoption and effective application of CFD technologies. Our services include</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <img src="images/cfd/service2.webp" class="img-fluid shadow rounded" alt="">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <img src="images/cfd/service3.webp" class="img-fluid shadow rounded" alt="">
+                            </div>
+                            <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                                <div class="section-title text-sm-left mb-4 pb-3 mt-4 pt-3 ">
+                                    <h4 class="title mb-4 text-white">Ventilation Quality Assessment</h4>
+                                    <p class="text-white mb-0">Our advanced simulation capabilities facilitate precise quantification and analysis of indoor environmental quality</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                    <div class="row">
+                        <div class="col-lg-5  d-flex justify-content-center align-items-center">
+                            <div class="section-title text-sm-left mb-4 pb-3 mt-4 pt-3 ">
+                                <h4 class="title mb-4 text-white">Website Real Estate Marketing & Development</h4>
+                                <p class="text-white mb-0">We offer expert consultation and tailored training programs to support the broader adoption and effective application of CFD technologies. Our services include</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <img src="images/cfd/service4.webp" class="img-fluid shadow rounded" alt="">
+                        </div>
+                    </div>
+                </div><!--end row-->
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4">PLANS & PRICING</h4>
+                            <p class="text-dark mx-auto mb-0">Choose the Right Plan for you</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row align-items-center">
+                    <div class="col-12 mt-4 pt-2">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade active show" id="Month" role="tabpanel" aria-labelledby="Monthly">    
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                                        <div class="card pricing-rates bg-light rounded text-center border-0">
+                                            <div class="card-body py-5">
+                                                <h2 class="title text-uppercase mb-4"> Discovery</h2>
+                                                <p>Free for learning</p>
+                                                <div class="d-flex justify-content-center mb-4">
+                                                    <span class="h4 mb-0 mt-2">Free</span>
+                                                </div>
+                                                <ul class="text-sm-left" style="font-size: 12px;">
+                                                    <li>
+                                                        Students and individuals interested in learning more about CFD applications in green building design.
+                                                    </li>
+                                                    <li>
+                                                        Access to our basic tutorials covering fundamental principles of CFD simulation applied to ventilation and convection analysis within green building projects. These tutorials provide a valuable introduction to our methodology and professional work. This plan does not include any paid services.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                
+                                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                                        <div class="card pricing-rates starter-plan bg-white shadow rounded text-center border-0">
+                                            <div class="card-body py-5">
+                                                <h2 class="title text-uppercase text-primary mb-4">Essential</h2>
+                                                <p>For small businesses</p>
+                                                <div class="d-flex justify-content-center mb-4">
+                                                    <span class="h4 mb-0 mt-2">Custom</span>
+                                                </div>
+                                                <ul class="text-sm-left" style="font-size: 12px;">
+                                                    <li>
+                                                        Individuals and small businesses needing a basic assessment and recommendations regarding ventilation and air conditioning in residential spaces (apartments, houses, etc.)
+                                                    </li>
+                                                    <li>
+                                                        Comprehensive analysis of existing ventilation systems within provided residential spaces. We'll assess both natural and mechanical ventilation effectiveness using our validated CFD models.
+                                                    </li>
+                                                    <li>
+                                                        Personalized recommendations to optimize ventilation and enhance indoor air quality.
+                                                    </li>
+                                                    <li>
+                                                        Tailored guidance for optimizing air conditioning placement, accounting for health-related requirements where provided. This includes considerations of energy efficiency in air conditioning installation suggestions.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                
+                                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                                        <div class="card pricing-rates bg-light rounded text-center border-0">
+                                            <div class="card-body py-5">
+                                                <h2 class="title text-uppercase mb-4"> Plus</h2>
+                                                <p>For extensive CFD needs, all features of the Essential Plan, plus</p>
+                                                <div class="d-flex justify-content-center mb-4">
+                                                    <span class="h4 mb-0 mt-2">Custom</span>
+                                                </div>
+                                                <ul class="text-sm-left" style="font-size: 12px;">
+                                                    <li>
+                                                        Businesses involved in green building design and manufacturing who need extensive CFD simulations and comprehensive training on design optimization and system improvements.​
+                                                    </li>
+                                                    <li>
+                                                        Custom CFD simulations addressing the specific needs of commercial green buildings, factories and related contexts.
+                                                    </li>
+                                                    <li>
+                                                        Personalized consulting sessions designed to improve building system design and address your organization’s unique issues, goals and regulations.
+                                                    </li>
+                                                    <li>
+                                                        Comprehensive training on our methodology, providing access to educational materials and support for staff on-boarding to incorporate improved simulations into future design stages.
+                                                    </li>
+                                                    <li>
+                                                        Customized deliverables that incorporate CFD simulation and visual presentation (like informative charts) relevant to the project’s purpose and reporting requirements.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                                        <div class="card pricing-rates bg-light rounded text-center border-0">
+                                            <div class="card-body py-5">
+                                                <h2 class="title text-uppercase mb-4"> Enterprise</h2>
+                                                <p>All features of the Professional Plan, plus</p>
+                                                <div class="d-flex justify-content-center mb-4">
+                                                    <span class="h4 mb-0 mt-2">Custom</span>
+                                                </div>
+                                                <ul class="text-sm-left" style="font-size: 12px;">
+                                                    <li>
+                                                        Large-scale projects, significant ventures or marketing opportunities which require ongoing, round-the-clock support and a comprehensive integrated approach to optimize ventilation with digital marketing.
+                                                    </li>
+                                                    <li>                     
+                                                        24/7 dedicated support and quick response times to queries and changes throughout the lifetime of the project and deliverables.
+                                                    </li>
+                                                    <li>
+                                                        Complete setup and creation of a dynamic website to display your company's enhanced sustainability, wellness-related qualities and efficiency-related achievements using 3D model visuals of air currents provided in your project. This includes an optimized strategy to communicate technical analysis to your potential customers for targeted impact, increasing sales conversion rates and achieving optimum customer retention by building consumer trust and trust and visibility through digital mediums.
+                                                    </li>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div>
+    
+                            <div class="tab-pane fade" id="Year" role="tabpanel" aria-labelledby="Yearly">
+                                <div class="row">
+                                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                                        <div class="pricing-rates bg-light py-5 p-4 rounded text-center">
+                                            <h2 class="title text-uppercase mb-4">Cloud Hosting</h2>
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <span class="h4 mb-0 mt-2">$</span>
+                                                <span class="price h1 mb-0">39</span>
+                                                <span class="h4 align-self-end mb-1">/mo</span>
+                                            </div>
+                
+                                            <ul class="list-unstyled mb-0 pl-0">
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>2 GB Memory</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>10 Free Optimization</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>24/7 support</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Content Optimization</li>
+                                            </ul>
+                                            <a href="javascript:void(0)" class="btn btn-primary mt-4">Buy Now</a>
+                                        </div>
+                                    </div><!--end col-->
+                
+                                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                                        <div class="pricing-rates starter-plan shadow bg-white py-5 p-4 rounded text-center">
+                                            <h2 class="title text-uppercase text-primary mb-4">Dedicated Hosting</h2>
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <span class="h4 mb-0 mt-2">$</span>
+                                                <span class="price h1 mb-0">239</span>
+                                                <span class="h4 align-self-end mb-1">/mo</span>
+                                            </div>
+                                            
+                                            <ul class="list-unstyled mb-0 pl-0">
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>4 GB Memory</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>10 Free Optimization</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>24/7 support</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Content Optimization</li>
+                                            </ul>
+                                            <a href="javascript:void(0)" class="btn btn-primary mt-4">Get Started</a>
+                                        </div>
+                                    </div><!--end col-->
+                
+                                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                                        <div class="pricing-rates bg-light py-5 p-4 rounded text-center">
+                                            <h2 class="title text-uppercase mb-4">VPS Hosting</h2>
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <span class="h4 mb-0 mt-2">$</span>
+                                                <span class="price h1 mb-0">359</span>
+                                                <span class="h4 align-self-end mb-1">/mo</span>
+                                            </div>
+                
+                                            <ul class="list-unstyled mb-0 pl-0">
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>8 GB Memory</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>10 Free Optimization</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>24/7 support</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Content Optimization</li>
+                                            </ul>
+                                            <a href="javascript:void(0)" class="btn btn-primary mt-4">Buy Now</a>
+                                        </div>
+                                    </div><!--end col-->
+                
+                                    <div class="col-lg-3 col-md-6 col-12 mt-4 pt-2">
+                                        <div class="pricing-rates bg-light py-5 p-4 rounded text-center">
+                                            <h2 class="title text-uppercase mb-4">Shared Hosting</h2>
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <span class="h4 mb-0 mt-2">$</span>
+                                                <span class="price h1 mb-0">479</span>
+                                                <span class="h4 align-self-end mb-1">/mo</span>
+                                            </div>
+                
+                                            <ul class="list-unstyled mb-0 pl-0">
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>16 GB Memory</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>10 Free Optimization</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>24/7 support</li>
+                                                <li class="h6 text-muted mb-0"><span class="text-primary h5 mr-2"><i class="uim uim-check-circle"></i></span>Content Optimization</li>
+                                            </ul>
+                                            <a href="javascript:void(0)" class="btn btn-primary mt-4">Buy Now</a>
+                                        </div>
+                                    </div><!--end col-->
+                                </div><!--end row-->
+                            </div>    
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </section><!--end section-->
+        <div class="bg-black" id="study-ac">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <div class="section-title mb-4 pb-3 mt-4 pt-3 ">
+                        <h4 class="title mb-4 text-white">UPCOMING STUDY</h4>
+                        <div class="col-12 mt-4">
+                            <div id="client-four" class="owl-carousel owl-theme">
+                                <div class="card shop-list border-0 position-relative overflow-hidden m-2">
+                                    <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                        <a href="#"><img src="images/cfd/service1.webp" class="img-fluid" alt=""></a>
+                                        <a href="#" class="overlay-work">
+                                            <img src="images/cfd/service1.webp" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+    
+                                <div class="card shop-list border-0 position-relative overflow-hidden m-2">
+                                    <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                        <a href="#"><img src="images/cfd/service2.webp" class="img-fluid" alt=""></a>
+                                        <a href="#" class="overlay-work">
+                                            <img src="images/cfd/service2.webp" class="img-fluid" alt="">
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+    
+                                <div class="card shop-list border-0 position-relative overflow-hidden m-2">
+                                    <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                        <a href="#"><img src="images/cfd/service3.webp" class="img-fluid" alt=""></a>
+                                        <a href="#" class="overlay-work">
+                                            <img src="images/cfd/service3.webp" class="img-fluid" alt="">
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+    
+                                <div class="card shop-list border-0 position-relative overflow-hidden m-2">
+                                    <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                        <a href="#"><img src="images/cfd/service4.webp" class="img-fluid" alt=""></a>
+                                        <a href="#" class="overlay-work">
+                                            <img src="images/cfd/service4.webp" class="img-fluid" alt="">
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+    
+                                <div class="card shop-list border-0 position-relative overflow-hidden m-2">
+                                    <div class="shop-image position-relative overflow-hidden rounded shadow">
+                                        <a href="#"><img src="images/cfd/service1.webp" class="img-fluid" alt=""></a>
+                                        <a href="#" class="overlay-work">
+                                            <img src="images/cfd/service1.webp" class="img-fluid" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end col-->
+            </div><!--end row-->
         </div>
-    </footer>
+        <!-- Footer Start -->
+        <footer class="footer bg-white" id="contact-ac">
+            <div class="container">
+                <h4 class="title mb-4 text-dark text-center">CONTACT US</h4>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card shadow rounded border-0">
+                            <div class="card-body py-5">
+                                <h4 class="card-title text-dark">Let's Discuss Your Project</h4>
+                                <div class="custom-form mt-4">
+                                    <div id="message"></div>
+                                    <form method="post" action="http://shreethemes.in/landrick/layouts/php/contact.php" name="contact-form" id="contact-form">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group position-relative">
+                                                    <label>First Name <span class="text-danger">*</span></label>
+                                                    <i data-feather="user" class="fea icon-sm icons"></i>
+                                                    <input name="name" id="name" type="text" class="form-control pl-5" placeholder="First Name :">
+                                                </div>
+                                            </div><!--end col-->
+                                            <div class="col-md-6">
+                                                <div class="form-group position-relative">
+                                                    <label>Last Name* <span class="text-danger">*</span></label>
+                                                    <i data-feather="user" class="fea icon-sm icons"></i>
+                                                    <input name="name" id="name" type="text" class="form-control pl-5" placeholder="First Name :">
+                                                </div>
+                                            </div><!--end col-->
+                                            <div class="col-md-6">
+                                                <div class="form-group position-relative">
+                                                    <label>Phone <span class="text-danger">*</span></label>
+                                                    <i data-feather="phone" class="fea icon-sm icons"></i>
+                                                    <input name="email" id="email" type="email" class="form-control pl-5" placeholder="Your phone :">
+                                                </div> 
+                                            </div><!--end col-->
+                                            <div class="col-md-6">
+                                                <div class="form-group position-relative">
+                                                    <label>Email <span class="text-danger">*</span></label>
+                                                    <i data-feather="mail" class="fea icon-sm icons"></i>
+                                                    <input name="email" id="email" type="email" class="form-control pl-5" placeholder="Your email :">
+                                                </div> 
+                                            </div><!--end col-->
+                                            <div class="col-md-12">
+                                                <div class="form-group position-relative">
+                                                    <label>Subject</label>
+                                                    <i data-feather="book" class="fea icon-sm icons"></i>
+                                                    <input name="subject" id="subject" type="text" class="form-control pl-5" placeholder="Subject">
+                                                </div>                                                                               
+                                            </div><!--end col-->
+                                            <div class="col-md-12">
+                                                <div class="form-group position-relative">
+                                                    <label>Comments</label>
+                                                    <i data-feather="message-circle" class="fea icon-sm icons"></i>
+                                                    <textarea name="comments" id="comments" rows="4" class="form-control pl-5" placeholder="Your Message :"></textarea>
+                                                </div>
+                                            </div>
+                                        </div><!--end row-->
+                                        <div class="row">
+                                            <div class="col-sm-12 text-center">
+                                                <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary btn-block" value="Send Message">
+                                                <div id="simple-msg"></div>
+                                            </div><!--end col-->
+                                        </div><!--end row-->
+                                    </form><!--end form--> 
+                                </div><!--end custom-form-->
+                            </div>
+                        </div>
+                    </div>
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer Start -->
+        <footer class="footer footer-bar bg-black">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col-sm-6">
+                        <div class="text-sm-left">
+                            <p class="mb-0">© 2024 CUOR </p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end container-->
+        </footer><!--end footer-->
+        <!-- Footer End -->
 
-    <!-- Back to top -->
-    <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
-    <!-- Back to top -->
+        <!-- Back to top -->
+        <a href="#" class="btn btn-icon btn-soft-primary back-to-top"><i data-feather="arrow-up" class="icons"></i></a>
+        <!-- Back to top -->
 
-    <!-- javascript -->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrollspy.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.5.0/simple-lightbox.min.js"></script>
+        <!-- javascript -->
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="js/scrollspy.min.js"></script>
+        <!--FLEX SLIDER-->
+        <script src="js/jquery.flexslider-min.js"></script>
+        <script src="js/flexslider.init.js"></script>
+        <!-- SLIDER -->
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/owl.init.js"></script>
+        <!-- Icons -->
+        <script src="js/feather.min.js"></script>
+        <!-- Switcher -->
+        <script src="js/switcher.js"></script>
+        <!-- Main Js -->
+        <script src="js/app.js"></script>
+    </body>
 
-    <!-- Magnific Popup -->
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/magnific.init.js"></script>
-    <!-- SLIDER -->
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/owl.init.js"></script>
-    <!-- Icons -->
-    <script src="js/feather.min.js"></script>
-    <!-- Switcher -->
-    <script src="js/switcher.js"></script>
-    <!-- Main Js -->
-    <script src="js/app.js"></script>
-    <script>
-        const videoElements = [];
-        const playButtons = [];
-        var index1 = 0;
-        var index2 = 0;
-
-
-        for (let i = 1; i <= 18; i++) {
-            videoElements.push(document.getElementById(`myVideo${i}`));
-            playButtons.push(document.getElementById(`playButton${i}`));
-        }
-
-        function togglePlayPause(videoId, playButtonId) {
-            const video = document.getElementById(videoId);
-            const playButton = document.getElementById(playButtonId);
-            
-            if (video.paused) {
-                video.play();
-                playButton.style.display = 'none';
-                video.classList.remove('paused');
-            } else {
-                video.pause();
-                playButton.style.display = 'flex';
-                video.classList.add('paused');
-            }
-        }
-
-        // videoElements.forEach((video) => {
-            // video.setAttribute('data-src', video.getAttribute('src'));
-            // video.removeAttribute('src');
-        //     video.dataset.loaded = "false";
-        // });
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const video = entry.target;
-
-                    if (video.dataset.loaded === "false" || !video.dataset.loaded) {
-                        video.src = video.getAttribute('data-src');
-                        video.load(); // Chỉ load khi đã gán src
-                        video.dataset.loaded = "true";
-                        console.log("index2:"+index2);
-                        index2++;
-                    }
-
-                    observer.unobserve(video);
-                }
-            });
-        }, { threshold: 0.25 });
-
-
-        videoElements.forEach((video, index) => {
-            const playButton = playButtons[index];
-            const videoId = `myVideo${index + 1}`;
-            const playButtonId = `playButton${index + 1}`;
-
-            observer.observe(video);
-
-            video.addEventListener('click', () => togglePlayPause(videoId, playButtonId));
-            video.addEventListener('ended', () => {
-                playButton.style.display = 'flex';
-                video.classList.add('paused');
-            });
-        });
-
-        function loadRemainingVideos() {
-            videoElements.forEach(video => {
-                if (video.dataset.loaded === "false" || !video.dataset.loaded) {
-                    video.src = video.getAttribute('data-src');
-                    video.load();
-                    video.dataset.loaded = "true";
-                    console.log("index1:"+index1);
-                    index1++;
-                }
-            });
-        }
-
-        window.addEventListener('load', loadRemainingVideos);
-
-
-        const popupOverlay = document.getElementById('popupOverlay');
-        const popupVideo = document.getElementById('popupVideo');
-
-        function togglePlayPause(id, playButton) {
-            if (document.getElementById(id).paused) {
-                document.getElementById(id).play();
-                document.getElementById(playButton).style.display = 'none';
-                document.getElementById(id).classList.remove('paused');
-            } else {
-                document.getElementById(id).pause();
-                document.getElementById(playButton).style.display = 'flex';
-                document.getElementById(id).classList.add('paused');
-            }
-        }
-
-        function openFullscreen(src) {
-            console.log(src);
-            $(".popupOverlaySource").attr('src', src);
-            $("#popupVideo")[0].load();
-            popupOverlay.style.display = 'flex';
-            popupVideo.play();
-        }
-        function closeFullscreen() {
-            popupOverlay.style.display = 'none';
-            popupVideo.pause();
-        }
-        popupOverlay.addEventListener('click', function () {
-            closeFullscreen();
-        });
-
-
-        var lightbox = new SimpleLightbox('.simplelightbox');
-
-    </script>
-</body>
-
+<!-- Mirrored from shreethemes.in/landrick/layouts/index-shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Aug 2020 05:27:40 GMT -->
 </html>
