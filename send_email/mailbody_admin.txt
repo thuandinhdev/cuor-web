@@ -1,10 +1,14 @@
 DATETIME:
 __@@__DATETIME__@@__
 Name:
-__@@__name__@@__
+__@@__first_name__@@__
+Name:
+__@@__last_name__@@__
 Email:
 __@@__email__@@__
 Phone:
 __@@__phone__@@__
+Subject:
+__@@__subject__@@__
 Message:
 __@@__message__@@__

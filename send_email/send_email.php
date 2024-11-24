@@ -31,14 +31,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email_admin_body = file_get_contents('mailbody_admin.txt');
 
         $now = new DateTime();
-        $formattedTime = $now->format('Y年n月j日 H:i:s');
+        $formattedTime = $now->format('Y-m-d H:i:s');
 
         // Thay thế nội dung trong mẫu email
         $placeholders = [
             '__@@__DATETIME__@@__' => $formattedTime,
-            '__@@__name__@@__' => htmlspecialchars($_POST['name']),
+            '__@@__first_name__@@__' => htmlspecialchars($_POST['first_name']),
+            '__@@__last_name__@@__' => htmlspecialchars($_POST['last_name']),
             '__@@__email__@@__' => htmlspecialchars($_POST['email']),
             '__@@__phone__@@__' => htmlspecialchars($_POST['phone']),
+            '__@@__subject__@@__' => htmlspecialchars($_POST['subject']),
             '__@@__message__@@__' => htmlspecialchars($_POST['message']),
         ];
 
@@ -62,34 +64,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $mail->send();
 
-        // $url = 'https://workschedule.cuortech.com/insert-contact';
-        // $data = array(
-        //     'content' => $email_admin_body,
-        // );
-        
-        // $ch = curl_init($url);
-        
-        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
-        // curl_setopt($ch, CURLOPT_POST, true); 
-        // curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data)); 
 
-        // curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        //     'Content-Type: application/x-www-form-urlencoded',
-            
-        // ));
-        
-        // $response = curl_exec($ch);
-        // if (curl_errno($ch)) {
-        //     echo 'Error:' . curl_error($ch);
-        // } else {
-            
-        //     echo 'Response from server: ' . $response;
-        // }
-
-        // curl_close($ch);
-        
-
-        header("Location: ../landing-cuor.html");
+        header("Location: ../index.html");
         exit();
 
     } catch (Exception $e) {

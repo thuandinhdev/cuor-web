@@ -29,6 +29,8 @@
  *     18.  Footer               *
  ================================*/
 @import url("https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
 .bg-primary {
   background-color: #2f55d4 !important;
 }
@@ -4968,4 +4970,125 @@ p {
   #style-switcher {
     display: none;
   }
+}
+
+body, * {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+
+#topnav, #topnav.nav-sticky{
+  background: #000;
+}
+#topnav .navigation-menu > li > a {
+  color: #fff;
+}
+#topnav .navigation-menu {
+  justify-content:end;
+}
+
+
+.main-slider {
+width: 100vw;      
+height: 100vh;     
+position: relative;
+overflow: hidden;  
+z-index: 1;        
+}
+
+.main-slider .slides li {
+width: 100%;       
+height: 100%;      
+}
+
+.main-slider .slides li video {
+width: 100%;       
+height: 100%;      
+object-fit: cover; 
+}
+
+@media (max-width: 768px) {
+  .main-slider .slides{
+      height: 100%;
+  }
+  .main-slider .slides li {
+      height: 100% !important;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; 
+  }
+
+  .main-slider .slides li video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); 
+      object-fit: cover;
+      width: 100vw; 
+      height: 100vh; 
+  }
+  #topnav .navigation-menu > li > a {
+      color: #000;
+  }
+}
+
+
+.slider-thumbnails {
+position: absolute;
+bottom: 20px;        
+right:0px;
+transform: translateX(-50%);
+z-index: 2;          
+}
+
+.slider-thumbnails ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.slider-thumbnails ul li {
+display: inline-block;
+margin: 0 5px;
+}
+
+.slider-thumbnails ul li img {
+width: 60px;
+height: 60px;
+cursor: pointer;
+opacity: 0.5;
+transition: opacity 0.3s ease;
+border-radius: 50%; 
+object-fit: cover;  
+}
+
+/* Khi hover, thumbnail sẽ sáng lên */
+.slider-thumbnails ul li img:hover {
+opacity: 1;
+}
+.slider-thumbnails ul li .active img {
+opacity: 1;
+}
+.red-color{
+  color: #881124;
+}
+.bg-black {
+  background: #000 !important;
+}
+.section.bg-black{
+  background-color: black; 
+}
+.proces-block {
+  width: 200px;
+  opacity: 0.8;
+  text-align: right;
+}
+.course-feature.active {
+  transform: translateY(-30px) !important;
+  opacity: 1;
+}
+.course-feature{
+  opacity: 0.5;
 }

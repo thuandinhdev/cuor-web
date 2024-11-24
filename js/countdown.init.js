@@ -1,5 +1,5 @@
 //countdown.init.js
-$('#countdown').countdown('2024/11/24', function(event) {
+$('#countdown').countdown('2020/12/25', function(event) {
 var $this = $(this).html(event.strftime(''
     + '<div class="count-down"> <span class="count-number">%D</span> <span class="count-head position-relative d-block">Days</span></div> '
     + '<div class="count-down"> <span class="count-number">%H</span> <span class="count-head position-relative d-block">Hours</span></div> '
