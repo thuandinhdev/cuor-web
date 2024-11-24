@@ -5072,7 +5072,7 @@ opacity: 1;
 opacity: 1;
 }
 .red-color{
-  color: #881124;
+  color: #881124 !important;
 }
 .bg-black {
   background: #000 !important;
