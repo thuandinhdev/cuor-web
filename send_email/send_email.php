@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port       = 587;
 
         // Cấu hình người gửi và người nhận
-        $mail->setFrom('thuandinh@cuortech.com', 'CUOR');
+        $mail->setFrom('cuor@cuortech.com', 'CUOR');
         $mail->addAddress($_POST['email']);
 
         // Cấu hình nội dung email
@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Gửi email cho admin
         $mail->clearAddresses(); // Xóa danh sách người nhận cũ
-        $mail->addAddress('thuandinh@cuortech.com'); // Gửi đến admin
+        $mail->addAddress('cuor@cuortech.com'); // Gửi đến admin
         $mail->Body    = $email_admin_body;
         $mail->AltBody = strip_tags($email_admin_body);
 
