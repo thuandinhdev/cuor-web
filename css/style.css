@@ -5096,3 +5096,7 @@ opacity: 1;
 body p {
   font-size: 20px;
 }
+
+section {
+  padding: 50px 0 !important;
+}
