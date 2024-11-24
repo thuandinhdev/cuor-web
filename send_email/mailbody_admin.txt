@@ -1,20 +1,20 @@
 DATETIME:
 __@@__DATETIME__@@__
-\r\n
+  
 FIrst Name:
 __@@__first_name__@@__
-\r\n
+  
 Last Name:
 __@@__last_name__@@__
-\r\n
+  
 Email:
 __@@__email__@@__
-\r\n
+  
 Phone:
 __@@__phone__@@__
-\r\n
+  
 Subject:
 __@@__subject__@@__
-\r\n
+  
 Message:
 __@@__message__@@__
