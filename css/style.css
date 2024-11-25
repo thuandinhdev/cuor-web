@@ -5100,3 +5100,21 @@ body p {
 section {
   padding: 50px 0 !important;
 }
+
+
+/* Chỉ áp dụng cho màn hình nhỏ */
+@media (max-width: 768px) {
+  .slider-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%; /* Video sẽ theo chiều rộng */
+    height: auto; /* Giữ nguyên tỉ lệ video */
+    object-fit: cover;
+  }
+  .slider-video {
+      width: 100vw; /* Chiều rộng đầy màn hình */
+      height: auto; /* Tự động căn chỉnh chiều cao theo tỉ lệ */
+  }
+}
