@@ -5,6 +5,9 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php'; // Nếu dùng Composer
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (!empty($_POST['hidden_field'])) {
+        die("Spam detected!");
+    }
     $secretKey = "6LcoVooqAAAAAJ4Ym5saGmeKgVUj1aTcLuD0AiCI";
     $responseKey = $_POST['g-recaptcha-response'];
 
