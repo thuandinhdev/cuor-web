@@ -5105,3 +5105,9 @@ body p {
 section {
   padding: 50px 0 !important;
 }
+
+@media (min-width: 1900px) {
+  .container-custom{
+      max-width: 80%;
+  }
+}
