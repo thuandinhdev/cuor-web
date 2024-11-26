@@ -5,24 +5,36 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php'; // Nếu dùng Composer
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $recaptchaResponse = $_POST['g-recaptcha-response'];
-    $secretKey = '6LelSooqAAAAAKuC-xTFVK4oq3hYbGzlo7lVEX67';
+    $secretKey = "6LcoVooqAAAAAJ4Ym5saGmeKgVUj1aTcLuD0AiCI";
+    $responseKey = $_POST['g-recaptcha-response'];
 
-    // Gửi yêu cầu xác minh tới Google
-    $verifyResponse = file_get_contents(
-        "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaResponse"
-    );
+    if (empty($responseKey)) {
+        header("Location: ../index.html");
+    }
 
+    $url = "https://www.google.com/recaptcha/api/siteverify";
+    $data = [
+        'secret' => $secretKey,
+        'response' => $responseKey
+    ];
+
+    $options = [
+        'http' => [
+            'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+            'method'  => 'POST',
+            'content' => http_build_query($data),
+        ]
+    ];
+
+    $context = stream_context_create($options);
+    $verifyResponse = file_get_contents($url, false, $context);
     $responseData = json_decode($verifyResponse);
 
-    // Kiểm tra kết quả xác minh
-    if ($responseData->success) {
-        echo "Form submitted successfully!";
-    } else {
-        echo "Verification failed. Please try again.";
+    if (!$responseData->success) {
+        header("Location: ../index.html");
     }
-    $mail = new PHPMailer(true);
 
+    $mail = new PHPMailer(true);
     try {
         // Cấu hình SMTP
         $mail->isSMTP();

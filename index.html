@@ -691,28 +691,28 @@
                                                 <div class="form-group position-relative">
                                                     <label class="text-dark">First Name <span class="text-danger">*</span></label>
                                                     <i data-feather="user" class="fea icon-sm icons"></i>
-                                                    <input name="first_name"  type="text" class="form-control pl-5" placeholder="First Name :">
+                                                    <input name="first_name"  type="text" class="form-control pl-5" placeholder="First Name :" required>
                                                 </div>
                                             </div><!--end col-->
                                             <div class="col-md-6">
                                                 <div class="form-group position-relative">
                                                     <label class="text-dark">Last Name* <span class="text-danger">*</span></label>
                                                     <i data-feather="user" class="fea icon-sm icons"></i>
-                                                    <input name="last_name" type="text" class="form-control pl-5" placeholder="Last Name :">
+                                                    <input name="last_name" type="text" class="form-control pl-5" placeholder="Last Name :" required>
                                                 </div>
                                             </div><!--end col-->
                                             <div class="col-md-6">
                                                 <div class="form-group position-relative">
                                                     <label class="text-dark">Phone <span class="text-danger">*</span></label>
                                                     <i data-feather="phone" class="fea icon-sm icons"></i>
-                                                    <input name="phone"  type="text" class="form-control pl-5" placeholder="Your phone :">
+                                                    <input name="phone"  type="text" class="form-control pl-5" placeholder="Your phone :" required>
                                                 </div> 
                                             </div><!--end col-->
                                             <div class="col-md-6">
                                                 <div class="form-group position-relative">
                                                     <label class="text-dark">Email <span class="text-danger">*</span></label>
                                                     <i data-feather="mail" class="fea icon-sm icons"></i>
-                                                    <input name="email" id="email" type="email" class="form-control pl-5" placeholder="Your email :">
+                                                    <input name="email" id="email" type="email" class="form-control pl-5" placeholder="Your email :" required>
                                                 </div> 
                                             </div><!--end col-->
                                             <div class="col-md-12">
@@ -729,6 +729,12 @@
                                                     <textarea name="message" id="message" rows="4" class="form-control pl-5" placeholder="Your Message :"></textarea>
                                                 </div>
                                             </div>
+                                            <div class="col-md-12 text-center">
+                                                <div class="form-group position-relative">
+                                                    <p class="red-color d-none erro-recaptcha">Please verify you are not a robot!</p>
+                                                    <div class="g-recaptcha" data-sitekey="6LcoVooqAAAAAEuLqTagy5irft5STulVTIOfctvw"></div>
+                                                </div>
+                                            </div>
                                         </div><!--end row-->
                                         <div class="row">
                                             <div class="col-sm-12 text-center">
@@ -736,7 +742,7 @@
                                                 <div id="simple-msg"></div>
                                             </div><!--end col-->
                                         </div><!--end row-->
-                                    </form><!--end form--> 
+                                    </form><!--end form-->
                                 </div><!--end custom-form-->
                             </div>
                         </div>
@@ -813,6 +819,7 @@
         <script src="js/switcher.js"></script>
         <!-- Main Js -->
         <script src="js/app.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
         <script>
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function(e) {
@@ -827,8 +834,14 @@
                     });
                 });
             });
+            document.getElementById("contact-form").addEventListener("submit", function (e) {
+                if (!grecaptcha.getResponse()) {
+                    e.preventDefault();
+                    $('.erro-recaptcha').removeClass('d-none');
+                }
+            });
         </script>
+
     </body>
 
-<!-- Mirrored from shreethemes.in/landrick/layouts/index-shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 26 Aug 2020 05:27:40 GMT -->
 </html>
