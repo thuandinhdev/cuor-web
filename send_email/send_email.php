@@ -5,6 +5,22 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php'; // Nếu dùng Composer
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $recaptchaResponse = $_POST['g-recaptcha-response'];
+    $secretKey = 'YOUR_SECRET_KEY';
+
+    // Gửi yêu cầu xác minh tới Google
+    $verifyResponse = file_get_contents(
+        "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaResponse"
+    );
+
+    $responseData = json_decode($verifyResponse);
+
+    // Kiểm tra kết quả xác minh
+    if ($responseData->success) {
+        echo "Form submitted successfully!";
+    } else {
+        echo "Verification failed. Please try again.";
+    }
     $mail = new PHPMailer(true);
 
     try {
