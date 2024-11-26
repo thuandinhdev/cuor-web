@@ -6,7 +6,7 @@ require 'vendor/autoload.php'; // Nếu dùng Composer
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recaptchaResponse = $_POST['g-recaptcha-response'];
-    $secretKey = 'YOUR_SECRET_KEY';
+    $secretKey = '6LelSooqAAAAAKuC-xTFVK4oq3hYbGzlo7lVEX67';
 
     // Gửi yêu cầu xác minh tới Google
     $verifyResponse = file_get_contents(
