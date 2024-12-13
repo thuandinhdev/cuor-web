@@ -5111,3 +5111,40 @@ section {
       max-width: 80%;
   }
 }
+
+
+.icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover; 
+}
+.course-feature{
+  margin: -125px 0 0px;
+  height: 65px;
+  border-radius: 50% !important;
+  object-fit: cover;
+}
+.course-feature, .course-feature.active {
+  transform: none !important;
+}
+
+
+.main-slider {
+  position: relative;
+}
+
+.main-slider .slide-text {
+  position: absolute;
+  /* max-width: 500px; */
+  top: 82px;
+  text-align: left; 
+  color: white; 
+  background-color: rgba(0, 0, 0, 0.7); 
+  padding: 10px 15px; 
+  border-radius: 5px; 
+  z-index: 10; 
+}
+.main-slider .slide-text h4{
+  font-size: 35px !important;
+}
