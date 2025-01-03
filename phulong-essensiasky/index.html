@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>EssensiaSky | CUOR Advanced CFD Solution</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CFD simulation | Indoor Air Quality | Ventilation Design | Green Building | Healthy Homes | Residential CFD Analysis | Energy Efficiency | Thermal Comfort. Our company offers expert CFD modeling for optimized building design, creating healthier, more sustainable homes. Improve ventilation, reduce energy costs, and enhance indoor comfort." />
+    <meta name="keywords" content="CUOR Advanced CFD Solution" />
+    <meta name="author" content="CUOR" />
+    <meta name="email" content="cuortech@cuortech.com" />
+    <meta property="og:title" content="CUOR Advanced CFD Solution" />
+    <meta property="og:description" content="CFD simulation | Indoor Air Quality | Ventilation Design | Green Building | Healthy Homes | Residential CFD Analysis | Energy Efficiency | Thermal Comfort."/>
+    <meta property="og:image" content="../images/thumbnail.jpg" />
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1072">
+    <meta property="og:image:height" content="563">
+    <meta property="og:url" content="https://cuortech.com/" />
+    <meta property="og:type" content="website" />
+    <meta name="website" content="https://cuortech.com" />
+    <meta rel="canonical" href="https://cuortech.com/">
+    
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../images/logo-cuor.png">
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Icons -->
+    <link href="../css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
+    <!-- FLEXSLIDER -->
+    <link href="../css/flexslider.css" rel="stylesheet" type="text/css" />
+    <!-- Slider -->
+    <link rel="stylesheet" href="../css/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css"/>
+    <!-- Main Css -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
+    <link href="../css/colors/default.css" rel="stylesheet" id="color-opt">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+        #overlay {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 150px;
+            height: 30px;
+            background: #e6e7e8;
+            display: none;
+            z-index: 10;
+        }
+        .container-iframe {
+            margin-top: 74px;
+            position: relative;
+            width: auto;
+            height: calc(100% - 74px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky bg-black">
+        <div class="container">
+            <h1>
+                <a class="logo" href="../">
+                    <img src="../images/logo-cuor.webp" height="50" alt="CUOR">
+                </a>
+            </h1>
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <a class="navbar-toggle">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+    
+            <div id="navigation">
+                <ul class="navigation-menu">
+                    <li><a href="../#about-ac">About</a></li>
+                    <li><a href="../#process-ac">Process</a></li>
+                    <li><a href="../#services-ac">Services</a></li>
+                    <li><a href="../#pricing-ac">Pricing</a></li>
+                    <li><a href="../#study-ac">Study</a></li>
+                    <li><a href="../#contact-ac">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container-iframe">
+        <iframe id="slidesIframe" src="https://docs.google.com/presentation/d/1-Xd8QOT_U2XlJaJF-e9u6mawoD2oNpulLXa2XU6v6Vg/embed?start=true&loop=true&delayms=3000" allowfullscreen></iframe>
+        <div id="overlay"></div>
+    </div>
+    <script>
+        const iframe = document.getElementById("slidesIframe");
+        const overlay = document.getElementById("overlay");
+
+        iframe.addEventListener("readystatechange", () => {
+            if (iframe.readyState === "interactive") {
+                overlay.style.display = "block";
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", () => {
+            setTimeout(() => {
+                overlay.style.display = "block";
+            }, 500);
+        });
+    </script>
+</body>
+</html>
